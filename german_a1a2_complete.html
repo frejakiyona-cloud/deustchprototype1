@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>German A1–A2 Complete Learning Guide</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, serif; background: #fafaf8; color: #1a1a18; line-height: 1.75; font-size: 15px; }
+
+.hero { background: #26215c; color: #f1efe8; padding: 2.5rem 2rem; text-align: center; }
+.hero h1 { font-size: 2rem; font-weight: 700; margin-bottom: 0.4rem; }
+.hero p { color: #afa9ec; font-size: 1rem; font-family: sans-serif; }
+
+.nav { background: #3c3489; display: flex; flex-wrap: wrap; gap: 2px; justify-content: center; padding: 6px; position: sticky; top: 0; z-index: 200; }
+.nav a { color: #ceecf6; text-decoration: none; font-size: 12px; padding: 5px 11px; border-radius: 4px; font-family: sans-serif; transition: background 0.15s; white-space: nowrap; }
+.nav a:hover { background: rgba(255,255,255,0.18); }
+
+.container { max-width: 920px; margin: 0 auto; padding: 0 1.5rem 4rem; }
+section { margin-top: 2.5rem; border-top: 2px solid #e8e6df; padding-top: 2rem; }
+section:first-of-type { border-top: none; }
+
+h2 { font-size: 1.6rem; font-weight: 700; color: #3c3489; margin-bottom: 0.8rem; }
+h3 { font-size: 1.15rem; font-weight: 700; color: #2c2c2a; margin: 1.4rem 0 0.5rem; }
+h4 { font-size: 0.97rem; font-weight: 700; color: #534ab7; margin: 1rem 0 0.4rem; }
+p { margin-bottom: 0.9rem; }
+
+.tip { background: #e1f5ee; border-left: 4px solid #1d9e75; border-radius: 0 8px 8px 0; padding: 0.9rem 1.1rem; margin: 1rem 0; }
+.tip strong { color: #0f6e56; display: block; margin-bottom: 0.25rem; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; font-family: sans-serif; }
+.warning { background: #faeeda; border-left: 4px solid #ef9f27; border-radius: 0 8px 8px 0; padding: 0.9rem 1.1rem; margin: 1rem 0; }
+.warning strong { color: #854f0b; display: block; margin-bottom: 0.25rem; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; font-family: sans-serif; }
+.example { background: #eeedfe; border-left: 4px solid #7f77dd; border-radius: 0 8px 8px 0; padding: 0.9rem 1.1rem; margin: 1rem 0; }
+.example strong { color: #3c3489; display: block; margin-bottom: 0.25rem; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; font-family: sans-serif; }
+
+.grammar-box { background: #fff; border: 1.5px solid #afa9ec; border-radius: 10px; padding: 1.1rem 1.3rem; margin: 1.2rem 0; }
+.grammar-box h4 { color: #3c3489; margin-top: 0; }
+
+table { width: 100%; border-collapse: collapse; margin: 0.8rem 0; font-family: sans-serif; font-size: 0.88rem; }
+th { background: #3c3489; color: #eeedfe; padding: 7px 10px; text-align: left; font-weight: 600; }
+td { padding: 6px 10px; border-bottom: 0.5px solid #d3d1c7; }
+tr:nth-child(even) { background: #f8f7f4; }
+
+.vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 8px; margin: 0.8rem 0; }
+.vocab-card { background: #fff; border: 1px solid #d3d1c7; border-radius: 8px; padding: 10px 12px; }
+.vocab-card .de { font-weight: 700; color: #3c3489; font-size: 0.95rem; }
+.vocab-card .gender { font-size: 0.75rem; color: #7f77dd; font-family: sans-serif; }
+.vocab-card .en { color: #5f5e5a; font-size: 0.85rem; margin-top: 2px; }
+.vocab-card .ex { font-size: 0.78rem; color: #888780; font-style: italic; margin-top: 3px; }
+
+/* CONFUSION PAIRS */
+.pair-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 1rem 0; }
+.pair-card { background: #fff; border-radius: 10px; overflow: hidden; border: 1px solid #d3d1c7; }
+.pair-card .pair-header { padding: 8px 14px; font-family: sans-serif; font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; gap: 8px; }
+.pair-card .pair-body { padding: 10px 14px; }
+.pair-card .word-block { margin-bottom: 10px; }
+.pair-card .word-title { font-weight: 700; font-family: sans-serif; font-size: 0.95rem; color: #3c3489; }
+.pair-card .word-rule { font-size: 0.82rem; color: #5f5e5a; margin: 2px 0 4px; font-family: sans-serif; }
+.pair-card .word-ex { font-size: 0.82rem; color: #888780; font-style: italic; }
+.pair-card .mem-tip { background: #eeedfe; border-radius: 6px; padding: 6px 10px; font-size: 0.8rem; font-family: sans-serif; color: #3c3489; margin-top: 8px; }
+.pair-card .vs { text-align: center; font-size: 0.75rem; color: #b4b2a9; font-family: sans-serif; padding: 3px 0; border-top: 0.5px solid #e8e6df; border-bottom: 0.5px solid #e8e6df; margin: 6px 0; }
+@media(max-width:600px){ .pair-grid { grid-template-columns: 1fr; } }
+
+/* SCHEDULE */
+.week-tabs { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 1rem; }
+.week-tab { padding: 6px 14px; border-radius: 20px; font-size: 0.82rem; font-family: sans-serif; cursor: pointer; border: 1px solid #d3d1c7; background: #fff; color: #5f5e5a; transition: all 0.15s; }
+.week-tab.active { background: #3c3489; color: #fff; border-color: #3c3489; }
+.week-content { display: none; }
+.week-content.active { display: block; }
+
+.day-schedule { margin-bottom: 1rem; background: #fff; border: 1px solid #d3d1c7; border-radius: 10px; overflow: hidden; }
+.day-header { padding: 8px 14px; font-family: sans-serif; font-weight: 700; font-size: 0.9rem; color: #fff; display: flex; align-items: center; gap: 8px; }
+.day-body { padding: 0; }
+.task-row { display: grid; grid-template-columns: 70px 1fr auto; gap: 10px; align-items: start; padding: 8px 14px; border-bottom: 0.5px solid #f1efe8; }
+.task-row:last-child { border-bottom: none; }
+.task-time { font-size: 0.75rem; color: #888780; font-family: sans-serif; padding-top: 2px; }
+.task-content { font-size: 0.88rem; }
+.task-content .task-main { color: #1a1a18; }
+.task-content .task-sub { font-size: 0.78rem; color: #888780; margin-top: 1px; }
+.task-tag { font-size: 0.72rem; padding: 2px 7px; border-radius: 10px; white-space: nowrap; font-family: sans-serif; align-self: start; margin-top: 2px; }
+.tag-vocab { background: #e1f5ee; color: #0f6e56; }
+.tag-grammar { background: #eeedfe; color: #3c3489; }
+.tag-write { background: #faeeda; color: #854f0b; }
+.tag-input { background: #faece7; color: #4a1b0c; }
+.tag-speak { background: #fbeaf0; color: #4b1528; }
+.tag-review { background: #f1efe8; color: #2c2c2a; }
+
+.todo-item { display: flex; gap: 10px; align-items: flex-start; padding: 6px 0; border-bottom: 0.5px solid #f1efe8; font-size: 0.88rem; }
+.todo-cb { width: 16px; height: 16px; border: 1.5px solid #afa9ec; border-radius: 3px; flex-shrink: 0; margin-top: 3px; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+.todo-cb.done { background: #534ab7; border-color: #534ab7; }
+.todo-cb.done::after { content: '✓'; color: #fff; font-size: 11px; }
+
+/* DICTIONARY */
+#dict-search { width: 100%; padding: 10px 14px; border: 1.5px solid #afa9ec; border-radius: 8px; font-size: 1rem; font-family: Georgia, serif; outline: none; }
+#dict-search:focus { border-color: #534ab7; }
+.dict-results { margin-top: 1rem; }
+.dict-entry { background: #fff; border: 1px solid #d3d1c7; border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 10px; }
+.dict-entry .entry-word { font-size: 1.2rem; font-weight: 700; color: #3c3489; }
+.dict-entry .entry-article { font-size: 0.85rem; color: #7f77dd; font-family: sans-serif; margin-left: 6px; }
+.dict-entry .entry-type { font-size: 0.75rem; color: #888780; font-family: sans-serif; margin-top: 2px; }
+.dict-entry .entry-meanings { margin-top: 8px; }
+.dict-entry .meaning-item { padding: 4px 0; border-bottom: 0.5px solid #f1efe8; font-size: 0.9rem; }
+.dict-entry .meaning-item:last-child { border-bottom: none; }
+.dict-entry .meaning-num { color: #7f77dd; font-family: sans-serif; font-size: 0.8rem; margin-right: 6px; font-weight: 700; }
+.dict-entry .meaning-en { color: #1a1a18; }
+.dict-entry .meaning-ex { font-size: 0.82rem; color: #888780; font-style: italic; margin-top: 3px; }
+.dict-entry .meaning-ex .de-part { color: #3c3489; }
+.no-results { text-align: center; color: #888780; padding: 2rem; font-family: sans-serif; }
+
+.chunk-list { list-style: none; }
+.chunk-list li { border-bottom: 0.5px solid #e8e6df; padding: 8px 0; display: grid; grid-template-columns: 1fr 1fr auto; gap: 10px; align-items: start; font-size: 0.88rem; }
+.chunk-list li:last-child { border-bottom: none; }
+.chunk-de { font-weight: 700; color: #3c3489; font-family: sans-serif; }
+.chunk-en { color: #5f5e5a; font-family: sans-serif; }
+.chunk-type { font-size: 0.72rem; background: #eeedfe; color: #534ab7; padding: 2px 7px; border-radius: 10px; white-space: nowrap; font-family: sans-serif; }
+
+.sentence-builder { background: #fff; border: 1.5px solid #1d9e75; border-radius: 10px; padding: 1.1rem; margin: 1.2rem 0; }
+.sentence-builder h4 { color: #0f6e56; margin-top: 0; }
+.pos-row { display: flex; flex-wrap: wrap; gap: 6px; margin: 0.6rem 0; align-items: center; }
+.pos-tag { padding: 3px 10px; border-radius: 20px; font-size: 0.8rem; font-family: sans-serif; font-weight: 600; }
+.pos-subj { background: #b5d4f4; color: #042c53; }
+.pos-verb { background: #f7c1c1; color: #501313; }
+.pos-obj { background: #c0dd97; color: #173404; }
+.pos-time { background: #fac775; color: #412402; }
+
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+@media(max-width:600px){ .two-col { grid-template-columns: 1fr; } }
+
+.schedule-card { background: #fff; border: 1px solid #d3d1c7; border-radius: 10px; overflow: hidden; margin-bottom: 10px; }
+.scard-header { padding: 9px 14px; color: #fff; font-family: sans-serif; font-weight: 700; font-size: 0.92rem; }
+.scard-body { padding: 10px 14px; }
+.stime-block { display: grid; grid-template-columns: 60px 1fr; gap: 10px; margin-bottom: 8px; align-items: start; }
+.stime { font-size: 0.75rem; color: #888780; font-family: sans-serif; padding-top: 2px; }
+.sact span { font-size: 0.78rem; color: #888780; display: block; }
+
+code { background: #f1efe8; border-radius: 4px; padding: 1px 5px; font-family: monospace; font-size: 0.88em; color: #534ab7; }
+.bold-de { color: #3c3489; font-weight: 700; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>🇩🇪 German A1–A2 Complete Learning Guide</h1>
+  <p>Grammar · Vocabulary · Confusing Word Pairs · 6-Week Schedule · Built-in Dictionary</p>
+</div>
+
+<nav class="nav">
+  <a href="#confusing">⚡ Confusing Pairs</a>
+  <a href="#schedule">📅 6-Week Plan</a>
+  <a href="#dictionary">🔍 Dictionary</a>
+  <a href="#articles">📌 der/die/das</a>
+  <a href="#grammar">📐 Grammar</a>
+  <a href="#vocab">📚 Vocabulary</a>
+  <a href="#sentences">✍️ Sentences</a>
+  <a href="#writing">📓 Writing</a>
+  <a href="#chunks">💬 Chunks</a>
+</nav>
+
+<div class="container">
+
+<!-- ═══════ CONFUSING PAIRS ═══════ -->
+<section id="confusing">
+<h2>⚡ Confusing Word Pairs — German Words That Destroy Everyone</h2>
+<p>These are the pairs your materials show and that every learner struggles with. Study them as <strong>contrast flashcards</strong> — always two words together, never alone.</p>
+
+<div class="tip"><strong>How to make contrast flashcards</strong>
+Front: <em>nach vs zu</em> — Back: nach Deutschland / zum Arzt + the short rule. Never study them separately — your brain only learns the difference when it sees both at once.
+</div>
+
+<h3>1. nach vs zu — both mean "to"</h3>
+<div class="pair-grid">
+  <div class="pair-card">
+    <div class="pair-header" style="background:#534ab7;">nach</div>
+    <div class="pair-body">
+      <div class="word-block">
+        <div class="word-rule">Use for cities, countries, directions, and "home"</div>
+        <div class="word-ex">Ich fahre <strong>nach</strong> Deutschland.</div>
+        <div class="word-ex">Wir gehen <strong>nach</strong> Berlin.</div>
+        <div class="word-ex">Geh <strong>nach</strong> Hause.</div>
+        <div class="word-ex">Er fährt <strong>nach</strong> links.</div>
+      </div>
+      <div class="mem-tip">💡 nach = destination/place with NO article</div>
+    </div>
+  </div>
+  <div class="pair-card">
+    <div class="pair-header" style="background:#993c1d;">zu</div>
+    <div class="pair-body">
+      <div class="word-block">
+        <div class="word-rule">Use for people, places with function, activities/events</div>
+        <div class="word-ex">Ich gehe <strong>zum</strong> Arzt. (zu + dem)</div>
+        <div class="word-ex">Wir fahren <strong>zur</strong> Schule. (zu + der)</div>
+        <div class="word-ex">Kommst du <strong>zu</strong> mir?</div>
+        <div class="word-ex">Er geht <strong>zum</strong> Sport.</div>
+      </div>
+      <div class="mem-tip">💡 zu = place/person that HAS an article</div>
+    </div>
+  </div>
+</div>
+
+<h3>2. in vs nach — both used for "going to places"</h3>
+<div class="pair-grid">
+  <div class="pair-card">
+    <div class="pair-header" style="background:#185fa5;">nach</div>
+    <div class="pair-body">
+      <div class="word-block">
+        <div class="word-rule">Countries/cities WITHOUT an article</div>
+        <div class="word-ex">Ich fahre <strong>nach</strong> Deutschland.</div>
+        <div class="word-ex">Ich fliege <strong>nach</strong> Jakarta.</div>
+        <div class="word-ex">Ich fahre <strong>nach</strong> Hause.</div>
+      </div>
+      <div class="mem-tip">💡 Most countries: nach. No article needed.</div>
+    </div>
+  </div>
+  <div class="pair-card">
+    <div class="pair-header" style="background:#0f6e56;">in</div>
+    <div class="pair-body">
+      <div class="word-block">
+        <div class="word-rule">Countries WITH article + enclosed spaces</div>
+        <div class="word-ex">Ich fahre <strong>in die</strong> Schweiz.</div>
+        <div class="word-ex">Ich gehe <strong>in die</strong> Schule. (inside!)</div>
+        <div class="word-ex">Wir gehen <strong>ins</strong> Kino. (in + das)</div>
+        <div class="word-ex">Ich gehe <strong>in den</strong> Supermarkt.</div>
+      </div>
+      <div class="mem-tip">💡 in = INTO something enclosed. Needs Akkusativ.</div>
+    </div>
+  </div>
+</div>
+<div class="warning"><strong>Countries with articles — memorise these!</strong>
+die Schweiz, die Türkei, die USA (pl.), die Niederlande (pl.), der Iran, der Irak, der Sudan → always use "in die / in den" not "nach"
+</div>
+
+<h3>3. wissen vs kennen — both mean "to know"</h3>
+<div class="pair-grid">
+  <div class="pair-card">
+    <div class="pair-header" style="background:#534ab7;">wissen</div>
+    <div class="pair-body">
+      <div class="word-block">
+        <div class="word-rule">Knowing facts, information, answers</div>
+        <div class="word-ex">Ich <strong>weiß</strong> die Antwort.</div>
+        <div class="word-ex"><strong>Weißt</strong> du, wo er wohnt?</div>
+        <div class="word-ex">Ich <strong>weiß</strong> nicht.</div>
+        <div class="word-ex">Sie <strong>weiß</strong>, dass er kommt.</div>
+      </div>
+      <div class="mem-tip">💡 wissen = knowledge/facts. Irregular: ich weiß, du weißt, er weiß</div>
+    </div>
+  </div>
+  <div class="pair-card">
+    <div class="pair-header" style="background:#3b6d11;">kennen</div>
+    <div class="pair-body">
+      <div class="word-block">
+        <div class="word-rule">Knowing people, places, things personally/by experience</div>
+        <div class="word-ex">Ich <strong>kenne</strong> Maria.</div>
+        <div class="word-ex"><strong>Kennst</strong> du Deutschland?</div>
+        <div class="word-ex">Ich <strong>kenne</strong> dieses Restaurant.</div>
+        <div class="word-ex">Er <strong>kennt</strong> die Stadt sehr gut.</div>
+      </div>
+      <div class="mem-tip">💡 kennen = familiarity. Regular verb.</div>
+    </div>
+  </div>
+</div>
+
+<h3>4. lernen vs studieren — "to study"</h3>
+<div class="pair-grid">
+  <div class="pair-card">
+    <div class="pair-header" style="background:#854f0b;">lernen</div>
+    <div class="pair-body">
+      <div class="word-block">
+        <div class="word-rule">Learning/studying anything, anywhere — school, self-study</div>
+        <div class="word-ex">Ich <strong>lerne</strong> Deutsch.</div>
+        <div class="word-ex">Ich <strong>lerne</strong> für den Test.</div>
+        <div class="word-ex">Sie <strong>lernt</strong> in der Schule.</div>
+        <div class="word-ex">Wir <strong>lernen</strong> Vokabeln.</div>
+      </div>
+      <div class="mem-tip">💡 lernen = general learning. Always safe to use.</div>
+    </div>
+  </div>
+  <div class="pair-card">
+    <div class="pair-header" style="background:#185fa5;">studieren</div>
+    <div class="pair-body">
+      <div class="word-block">
+        <div class="word-rule">ONLY for studying at university (Universität)</div>
+        <div class="word-ex">Ich <strong>studiere</strong> Medizin.</div>
+        <div class="word-ex">Er <strong>studiert</strong> in Berlin.</div>
+        <div class="word-ex">Sie <strong>studiert</strong> Germanistik.</div>
+        <div class="word-ex">❌ Ich studiere Deutsch. (unless uni major)</div>
+      </div>
+      <div class="mem-tip">💡 studieren = university only. -ieren verb → partizip: studiert</div>
+    </div>
+  </div>
+</div>
+
+<h3>5. wann vs wenn — both mean "when"</h3>
+<div class="pair-grid">
+  <div class="pair-card">
+    <div class="pair-header" style="background:#993c1d;">wann</div>
+    <div class="pair-body">
+      <div class="word-block">
+        <div class="word-rule">Question word — asking about a specific time</div>
+        <div class="word-ex"><strong>Wann</strong> kommst du?</div>
+        <div class="word-ex">Ich frage, <strong>wann</strong> er kommt.</div>
+        <div class="word-ex"><strong>Wann</strong> hast du Zeit?</div>
+      </div>
+      <div class="mem-tip">💡 wann = "at what time?" — always a question (direct or indirect)</div>
+    </div>
+  </div>
+  <div class="pair-card">
+    <div class="pair-header" style="background:#534ab7;">wenn</div>
+    <div class="pair-body">
+      <div class="word-block">
+        <div class="word-rule">Conditional (if) or repeated/habitual action (whenever)</div>
+        <div class="word-ex"><strong>Wenn</strong> ich Zeit habe, lese ich.</div>
+        <div class="word-ex"><strong>Wenn</strong> es regnet, bleibe ich zu Hause.</div>
+        <div class="word-ex"><strong>Wenn</strong> ich müde bin, schlafe ich.</div>
+      </div>
+      <div class="mem-tip">💡 wenn = if/whenever. Verb goes to END of wenn-clause.</div>
+    </div>
+  </div>
+</div>
+
+<h3>6. als vs wenn — both can mean "when" in the past</h3>
+<div class="pair-grid">
+  <div class="pair-card">
+    <div class="pair-header" style="background:#0f6e56;">als</div>
+    <div class="pair-body">
+      <div class="word-block">
+        <div class="word-rule">ONE specific time in the PAST — happened once</div>
+        <div class="word-ex"><strong>Als</strong> ich klein war, spielte ich Fußball.</div>
+        <div class="word-ex"><strong>Als</strong> er ankam, war ich schon da.</div>
+        <div class="word-ex"><strong>Als</strong> ich in Berlin war...</div>
+      </div>
+      <div class="mem-tip">💡 als = single past event. Like saying "back when..."</div>
+    </div>
+  </div>
+  <div class="pair-card">
+    <div class="pair-header" style="background:#534ab7;">wenn</div>
+    <div class="pair-body">
+      <div class="word-block">
+        <div class="word-rule">Repeated past actions, future, or conditions</div>
+        <div class="word-ex"><strong>Wenn</strong> ich als Kind krank war, blieb ich zu Hause.</div>
+        <div class="word-ex"><strong>Wenn</strong> wir Zeit haben, gehen wir spazieren.</div>
+      </div>
+      <div class="mem-tip">💡 wenn = habit/repeated/"every time that"</div>
+    </div>
+  </div>
+</div>
+
+<h3>7. seit vs vor — both relate to time in the past</h3>
+<div class="pair-grid">
+  <div class="pair-card">
+    <div class="pair-header" style="background:#534ab7;">seit</div>
+    <div class="pair-body">
+      <div class="word-block">
+        <div class="word-rule">Since/for — started in the past and STILL CONTINUING now</div>
+        <div class="word-ex">Ich lerne <strong>seit</strong> zwei Jahren Deutsch.</div>
+        <div class="word-ex">Er wohnt <strong>seit</strong> 2020 in Berlin.</div>
+        <div class="word-ex">Ich bin <strong>seit</strong> einer Stunde hier.</div>
+      </div>
+      <div class="mem-tip">💡 seit = action still ongoing. Use present tense with seit!</div>
+    </div>
+  </div>
+  <div class="pair-card">
+    <div class="pair-header" style="background:#888780;">vor</div>
+    <div class="pair-body">
+      <div class="word-block">
+        <div class="word-rule">"Ago" — a finished point in the past</div>
+        <div class="word-ex"><strong>Vor</strong> zwei Jahren begann ich Deutsch.</div>
+        <div class="word-ex">Er kam <strong>vor</strong> einer Stunde an.</div>
+        <div class="word-ex"><strong>Vor</strong> dem Essen wasche ich die Hände.</div>
+      </div>
+      <div class="mem-tip">💡 vor = finished. "Two years ago" = vor zwei Jahren</div>
+    </div>
+  </div>
+</div>
+
+<h3>8. müssen vs sollen — both feel like "must"</h3>
+<div class="pair-grid">
+  <div class="pair-card">
+    <div class="pair-header" style="background:#993c1d;">müssen</div>
+    <div class="pair-body">
+      <div class="word-block">
+        <div class="word-rule">Strong internal necessity — you have to, no choice</div>
+        <div class="word-ex">Ich <strong>muss</strong> lernen. (I have to study)</div>
+        <div class="word-ex">Sie <strong>muss</strong> arbeiten. (she has to work)</div>
+        <div class="word-ex">Wir <strong>müssen</strong> gehen.</div>
+      </div>
+      <div class="mem-tip">💡 müssen = YOU feel the necessity internally</div>
+    </div>
+  </div>
+  <div class="pair-card">
+    <div class="pair-header" style="background:#185fa5;">sollen</div>
+    <div class="pair-body">
+      <div class="word-block">
+        <div class="word-rule">Someone ELSE told you to / external expectation</div>
+        <div class="word-ex">Ich <strong>soll</strong> mehr schlafen. (doctor said so)</div>
+        <div class="word-ex">Du <strong>sollst</strong> das nicht tun. (you're not supposed to)</div>
+        <div class="word-ex">Er <strong>soll</strong> anrufen. (he's supposed to call)</div>
+      </div>
+      <div class="mem-tip">💡 sollen = external order/expectation from others</div>
+    </div>
+  </div>
+</div>
+
+<h3>9. werden vs sein</h3>
+<div class="pair-grid">
+  <div class="pair-card">
+    <div class="pair-header" style="background:#3c3489;">sein</div>
+    <div class="pair-body">
+      <div class="word-block">
+        <div class="word-rule">Current state — what someone/something IS right now</div>
+        <div class="word-ex">Ich <strong>bin</strong> müde.</div>
+        <div class="word-ex">Er <strong>ist</strong> Lehrer.</div>
+        <div class="word-ex">Das <strong>ist</strong> schön.</div>
+      </div>
+      <div class="mem-tip">💡 sein = current state, right now</div>
+    </div>
+  </div>
+  <div class="pair-card">
+    <div class="pair-header" style="background:#639922;">werden</div>
+    <div class="pair-body">
+      <div class="word-block">
+        <div class="word-rule">To become — transformation, future, change</div>
+        <div class="word-ex">Ich <strong>werde</strong> Ärztin. (I'm becoming a doctor)</div>
+        <div class="word-ex">Es <strong>wird</strong> kalt. (it's getting cold)</div>
+        <div class="word-ex">Sie <strong>wird</strong> müde. (she's getting tired)</div>
+      </div>
+      <div class="mem-tip">💡 werden = change/transformation/becoming</div>
+    </div>
+  </div>
+</div>
+
+<h3>10. fahren vs gehen</h3>
+<div class="pair-grid">
+  <div class="pair-card">
+    <div class="pair-header" style="background:#854f0b;">fahren</div>
+    <div class="pair-body">
+      <div class="word-block">
+        <div class="word-rule">Travel using a vehicle (car, train, bike, bus)</div>
+        <div class="word-ex">Ich <strong>fahre</strong> nach Berlin. (by car/train)</div>
+        <div class="word-ex">Wir <strong>fahren</strong> mit dem Bus.</div>
+        <div class="word-ex">Er <strong>fährt</strong> Fahrrad.</div>
+      </div>
+      <div class="mem-tip">💡 fahren = vehicle. Irregular: er fährt</div>
+    </div>
+  </div>
+  <div class="pair-card">
+    <div class="pair-header" style="background:#0f6e56;">gehen</div>
+    <div class="pair-body">
+      <div class="word-block">
+        <div class="word-rule">Going by foot / walking somewhere</div>
+        <div class="word-ex">Ich <strong>gehe</strong> zur Schule. (walking)</div>
+        <div class="word-ex">Wir <strong>gehen</strong> ins Kino.</div>
+        <div class="word-ex">Sie <strong>geht</strong> spazieren.</div>
+      </div>
+      <div class="mem-tip">💡 gehen = on foot. Perfekt: bin gegangen</div>
+    </div>
+  </div>
+</div>
+
+<h3>11. sprechen vs sagen</h3>
+<div class="pair-grid">
+  <div class="pair-card">
+    <div class="pair-header" style="background:#534ab7;">sprechen</div>
+    <div class="pair-body">
+      <div class="word-block">
+        <div class="word-rule">To speak a language / to talk (generally)</div>
+        <div class="word-ex">Ich <strong>spreche</strong> Deutsch.</div>
+        <div class="word-ex">Wir <strong>sprechen</strong> über das Thema.</div>
+        <div class="word-ex">Er <strong>spricht</strong> sehr schnell.</div>
+      </div>
+      <div class="mem-tip">💡 sprechen = language ability or talking in general</div>
+    </div>
+  </div>
+  <div class="pair-card">
+    <div class="pair-header" style="background:#993c1d;">sagen</div>
+    <div class="pair-body">
+      <div class="word-block">
+        <div class="word-rule">To say a specific thing — always with content</div>
+        <div class="word-ex">Er <strong>sagt</strong> „Hallo".</div>
+        <div class="word-ex">Was hast du <strong>gesagt</strong>?</div>
+        <div class="word-ex">Sie <strong>sagt</strong>, dass sie kommt.</div>
+      </div>
+      <div class="mem-tip">💡 sagen = specific words/message. Needs a what.</div>
+    </div>
+  </div>
+</div>
+
+<h3>12. hören vs zuhören</h3>
+<div class="pair-grid">
+  <div class="pair-card">
+    <div class="pair-header" style="background:#185fa5;">hören</div>
+    <div class="pair-body">
+      <div class="word-block">
+        <div class="word-rule">To hear / listen generally (background listening)</div>
+        <div class="word-ex">Ich <strong>höre</strong> Musik.</div>
+        <div class="word-ex">Ich <strong>höre</strong> das Radio.</div>
+        <div class="word-ex">Hörst du das?</div>
+      </div>
+      <div class="mem-tip">💡 hören = passive/background hearing</div>
+    </div>
+  </div>
+  <div class="pair-card">
+    <div class="pair-header" style="background:#3b6d11;">zuhören</div>
+    <div class="pair-body">
+      <div class="word-block">
+        <div class="word-rule">To listen attentively TO someone — separable verb + Dativ</div>
+        <div class="word-ex">Hörst du mir <strong>zu</strong>?</div>
+        <div class="word-ex">Die Schüler <strong>hören</strong> dem Lehrer <strong>zu</strong>.</div>
+        <div class="word-ex"><strong>Hör</strong> mir bitte <strong>zu</strong>!</div>
+      </div>
+      <div class="mem-tip">💡 zuhören = attentive listening TO someone (Dativ!)</div>
+    </div>
+  </div>
+</div>
+
+<div class="tip"><strong>Your "Confusing Words" Notebook</strong>
+Keep a dedicated section (physical or digital). Every time you encounter a confusing pair, write: (1) the rule in ONE sentence, (2) two contrasting examples, (3) your own sentence using each. Review this notebook every Sunday.
+</div>
+</section>
+
+<!-- ═══════ 6-WEEK SCHEDULE ═══════ -->
+<section id="schedule">
+<h2>📅 6-Week Daily Learning Plan</h2>
+<p>Starting tomorrow. Each day is fully guided — you never need to think about what to study.</p>
+
+<div class="week-tabs" id="weekTabs">
+  <button class="week-tab active" onclick="showWeek(0)">Week 1</button>
+  <button class="week-tab" onclick="showWeek(1)">Week 2</button>
+  <button class="week-tab" onclick="showWeek(2)">Week 3</button>
+  <button class="week-tab" onclick="showWeek(3)">Week 4</button>
+  <button class="week-tab" onclick="showWeek(4)">Week 5</button>
+  <button class="week-tab" onclick="showWeek(5)">Week 6</button>
+</div>
+
+<div id="weekContents"></div>
+</section>
+
+<!-- ═══════ DICTIONARY ═══════ -->
+<section id="dictionary">
+<h2>🔍 Built-in German–English Dictionary</h2>
+<p>Search in German or English. Works with articles, verb forms, and phrases.</p>
+<input type="text" id="dict-search" placeholder="Search: der Rucksack, family, kochen, wissen..." oninput="searchDict(this.value)" />
+<div class="dict-results" id="dict-results">
+  <div class="no-results" style="color:#b4b2a9;padding:1.5rem;text-align:center;font-family:sans-serif;font-size:0.9rem;">Type a word above to search...</div>
+</div>
+</section>
+
+<!-- ═══════ ARTICLES ═══════ -->
+<section id="articles">
+<h2>📌 der, die, das — The Article System</h2>
+<div class="grammar-box">
+<h4>Definite articles (the)</h4>
+<table>
+<tr><th>Gender</th><th>Article</th><th>Example</th><th>English</th></tr>
+<tr><td>Maskulin</td><td style="color:#534ab7;font-weight:700">der</td><td>der Rucksack</td><td>the backpack</td></tr>
+<tr><td>Feminin</td><td style="color:#993c1d;font-weight:700">die</td><td>die Tasche</td><td>the bag</td></tr>
+<tr><td>Neutrum</td><td style="color:#0f6e56;font-weight:700">das</td><td>das Buch</td><td>the book</td></tr>
+<tr><td>Plural (all)</td><td style="color:#993c1d;font-weight:700">die</td><td>die Bücher</td><td>the books</td></tr>
+</table>
+</div>
+<div class="grammar-box">
+<h4>Nominativ → Akkusativ changes</h4>
+<table>
+<tr><th>Gender</th><th>Nominativ</th><th>Akkusativ</th><th>Changes?</th></tr>
+<tr><td>Maskulin</td><td>der / ein / kein</td><td><strong>den / einen / keinen</strong></td><td>✅ Only this one!</td></tr>
+<tr><td>Feminin</td><td>die / eine / keine</td><td>die / eine / keine</td><td>❌ Same</td></tr>
+<tr><td>Neutrum</td><td>das / ein / kein</td><td>das / ein / kein</td><td>❌ Same</td></tr>
+<tr><td>Plural</td><td>die / — / keine</td><td>die / — / keine</td><td>❌ Same</td></tr>
+</table>
+</div>
+<h3>Gender tips — clues in the word itself</h3>
+<table>
+<tr><th>Ending</th><th>Gender</th><th>Examples</th></tr>
+<tr><td>-ung, -heit, -keit, -schaft, -tion, -ie, -e</td><td>die (feminin)</td><td>die Meinung, die Bibliothek, die Familie</td></tr>
+<tr><td>-chen, -lein (diminutives)</td><td>das (neutrum)</td><td>das Mädchen, das Brötchen</td></tr>
+<tr><td>-er, -ling, -ig, -ismus</td><td>der (maskulin)</td><td>der Drucker, der Frühling</td></tr>
+<tr><td>Infinitive used as noun</td><td>das (neutrum)</td><td>das Lernen, das Essen</td></tr>
+<tr><td>Days, months, seasons</td><td>der (maskulin)</td><td>der Montag, der Januar, der Sommer</td></tr>
+</table>
+</section>
+
+<!-- ═══════ GRAMMAR ═══════ -->
+<section id="grammar">
+<h2>📐 Core Grammar — A1 to A2</h2>
+
+<h3>Verb conjugation (present tense)</h3>
+<div class="grammar-box">
+<table>
+<tr><th></th><th>kochen</th><th>arbeiten</th><th>lesen (e→ie)</th><th>sprechen (e→i)</th></tr>
+<tr><td>ich</td><td>koche</td><td>arbeite</td><td>lese</td><td>spreche</td></tr>
+<tr><td>du</td><td>kochst</td><td>arbeitest</td><td>liest ⚡</td><td>sprichst ⚡</td></tr>
+<tr><td>er/sie/es</td><td>kocht</td><td>arbeitet</td><td>liest ⚡</td><td>spricht ⚡</td></tr>
+<tr><td>wir</td><td>kochen</td><td>arbeiten</td><td>lesen</td><td>sprechen</td></tr>
+<tr><td>ihr</td><td>kocht</td><td>arbeitet</td><td>lest</td><td>sprecht</td></tr>
+<tr><td>sie/Sie</td><td>kochen</td><td>arbeiten</td><td>lesen</td><td>sprechen</td></tr>
+</table>
+</div>
+
+<h3>Modal verbs</h3>
+<div class="grammar-box">
+<table>
+<tr><th></th><th>müssen</th><th>können</th><th>wollen</th><th>möchten</th><th>dürfen</th><th>sollen</th></tr>
+<tr><td>ich</td><td>muss</td><td>kann</td><td>will</td><td>möchte</td><td>darf</td><td>soll</td></tr>
+<tr><td>du</td><td>musst</td><td>kannst</td><td>willst</td><td>möchtest</td><td>darfst</td><td>sollst</td></tr>
+<tr><td>er/sie/es</td><td>muss</td><td>kann</td><td>will</td><td>möchte</td><td>darf</td><td>soll</td></tr>
+<tr><td>wir</td><td>müssen</td><td>können</td><td>wollen</td><td>möchten</td><td>dürfen</td><td>sollen</td></tr>
+<tr><td>ihr</td><td>müsst</td><td>könnt</td><td>wollt</td><td>möchtet</td><td>dürft</td><td>sollt</td></tr>
+<tr><td>sie/Sie</td><td>müssen</td><td>können</td><td>wollen</td><td>möchten</td><td>dürfen</td><td>sollen</td></tr>
+</table>
+</div>
+<div class="sentence-builder">
+<h4>Modal verb structure</h4>
+<div class="pos-row"><span class="pos-tag pos-subj">Ich</span><span class="pos-tag pos-verb">muss</span><span class="pos-tag pos-time">heute Abend</span><span class="pos-tag pos-obj">lernen.</span></div>
+<p style="font-size:0.82rem;color:#888780;margin:0;">Modal verb = position 2 (conjugated). Main verb = infinitive at the END.</p>
+</div>
+
+<h3>Perfekt — talking about the past</h3>
+<div class="grammar-box">
+<table>
+<tr><th>Verb type</th><th>Formula</th><th>Infinitive</th><th>Partizip II</th></tr>
+<tr><td>Regular</td><td>ge- + stem + -t</td><td>kochen</td><td>ge<strong>kocht</strong></td></tr>
+<tr><td>Regular (-ten)</td><td>ge- + stem + -et</td><td>arbeiten</td><td>ge<strong>arbeitet</strong></td></tr>
+<tr><td>-ieren verb</td><td>stem + -t (no ge-!)</td><td>studieren</td><td>studier<strong>t</strong></td></tr>
+<tr><td>Separable</td><td>prefix + ge + stem + t/en</td><td>aufräumen</td><td>auf<strong>ge</strong>räumt</td></tr>
+<tr><td>Irregular (strong)</td><td>ge- + new stem + -en</td><td>gehen</td><td>ge<strong>gangen</strong></td></tr>
+<tr><td>Irregular</td><td></td><td>schreiben</td><td>ge<strong>schrieben</strong></td></tr>
+<tr><td>Irregular</td><td></td><td>fahren</td><td>ge<strong>fahren</strong></td></tr>
+<tr><td>Irregular</td><td></td><td>essen</td><td>ge<strong>gessen</strong></td></tr>
+</table>
+</div>
+<div class="two-col">
+<div class="tip"><strong>Use haben when...</strong>
+Verb has a direct object (most verbs):<br>
+Ich habe Pasta <strong>gemacht</strong>.<br>
+Er hat ein Buch <strong>gelesen</strong>.
+</div>
+<div class="tip"><strong>Use sein when...</strong>
+Movement A→B or change of state:<br>
+Ich bin nach Berlin <strong>gefahren</strong>.<br>
+Sie ist aufgestanden.
+</div>
+</div>
+
+<h3>weil vs denn — because</h3>
+<div class="two-col">
+<div class="example"><strong>weil — verb to END</strong>
+Ich lerne Deutsch, <em>weil</em> ich in Deutschland arbeiten <strong>möchte</strong>.<br>
+<small style="color:#888780">After weil: verb goes to the very end!</small>
+</div>
+<div class="example"><strong>denn — normal order</strong>
+Ich lerne Deutsch, <em>denn</em> ich <strong>möchte</strong> in Deutschland arbeiten.<br>
+<small style="color:#888780">After denn: subject-verb-... stays normal.</small>
+</div>
+</div>
+
+<h3>Prepositions — Dativ vs Akkusativ</h3>
+<div class="grammar-box">
+<h4>Wo? (where? = position) → Dativ</h4>
+<table>
+<tr><th>Preposition</th><th>Contraction</th><th>Example</th></tr>
+<tr><td>in + dem</td><td>im</td><td>Das Buch liegt im Schrank.</td></tr>
+<tr><td>an + dem</td><td>am</td><td>Das Bild hängt an der Wand.</td></tr>
+<tr><td>auf + dem</td><td>—</td><td>Das Handy liegt auf dem Tisch.</td></tr>
+<tr><td>neben / vor / hinter / über / unter / zwischen + dem/der</td><td>—</td><td>Neben dem Telefon.</td></tr>
+</table>
+</div>
+<div class="grammar-box">
+<h4>Wohin? (where to? = movement) → Akkusativ</h4>
+<table>
+<tr><th>Preposition</th><th>Example</th></tr>
+<tr><td>in + den/die/das</td><td>Leg das Buch in den Schrank.</td></tr>
+<tr><td>an + die</td><td>Häng das Bild an die Wand.</td></tr>
+<tr><td>auf + den/die/das</td><td>Stell die Schuhe auf den Boden.</td></tr>
+</table>
+</div>
+</section>
+
+<!-- ═══════ VOCAB ═══════ -->
+<section id="vocab">
+<h2>📚 Vocabulary by Theme</h2>
+<h3>Greetings & Basics</h3>
+<div class="vocab-grid">
+  <div class="vocab-card"><div class="de">Hallo / Guten Tag</div><div class="en">Hello / Good day</div></div>
+  <div class="vocab-card"><div class="de">Auf Wiedersehen</div><div class="en">Goodbye (formal)</div></div>
+  <div class="vocab-card"><div class="de">Tschüss / Tschau</div><div class="en">Bye (informal)</div></div>
+  <div class="vocab-card"><div class="de">Wie geht's?</div><div class="en">How are you? (informal)</div></div>
+  <div class="vocab-card"><div class="de">Danke sehr / Bitte</div><div class="en">Thank you / Please</div></div>
+  <div class="vocab-card"><div class="de">Entschuldigung</div><div class="en">Excuse me / Sorry</div></div>
+  <div class="vocab-card"><div class="de">Tut mir leid</div><div class="en">I'm sorry</div></div>
+  <div class="vocab-card"><div class="de">leider</div><div class="en">unfortunately</div></div>
+  <div class="vocab-card"><div class="de">natürlich / klar</div><div class="en">of course / sure</div></div>
+  <div class="vocab-card"><div class="de">gern / gerne</div><div class="en">gladly / like to</div></div>
+</div>
+<h3>Family</h3>
+<div class="vocab-grid">
+  <div class="vocab-card"><div class="de">die Eltern</div><div class="gender">nur Plural</div><div class="en">parents</div></div>
+  <div class="vocab-card"><div class="de">die Mutter, -¨</div><div class="gender">feminin</div><div class="en">mother</div></div>
+  <div class="vocab-card"><div class="de">der Vater, -¨</div><div class="gender">maskulin</div><div class="en">father</div></div>
+  <div class="vocab-card"><div class="de">der Bruder, -¨</div><div class="gender">maskulin</div><div class="en">brother</div></div>
+  <div class="vocab-card"><div class="de">die Schwester, -n</div><div class="gender">feminin</div><div class="en">sister</div></div>
+  <div class="vocab-card"><div class="de">die Geschwister</div><div class="gender">nur Plural</div><div class="en">siblings</div></div>
+  <div class="vocab-card"><div class="de">die Großeltern</div><div class="gender">nur Plural</div><div class="en">grandparents</div></div>
+  <div class="vocab-card"><div class="de">der Opa / die Oma</div><div class="en">grandpa / grandma</div></div>
+</div>
+<h3>Food & Restaurant</h3>
+<div class="vocab-grid">
+  <div class="vocab-card"><div class="de">das Frühstück</div><div class="gender">neutrum</div><div class="en">breakfast</div></div>
+  <div class="vocab-card"><div class="de">das Mittagessen</div><div class="gender">neutrum</div><div class="en">lunch</div></div>
+  <div class="vocab-card"><div class="de">das Abendessen</div><div class="gender">neutrum</div><div class="en">dinner</div></div>
+  <div class="vocab-card"><div class="de">bestellen</div><div class="en">to order</div><div class="ex">Ich bestelle einen Kaffee.</div></div>
+  <div class="vocab-card"><div class="de">bezahlen</div><div class="en">to pay</div><div class="ex">Ich möchte bitte bezahlen.</div></div>
+  <div class="vocab-card"><div class="de">der Kellner / die Kellnerin</div><div class="en">waiter / waitress</div></div>
+  <div class="vocab-card"><div class="de">die Rechnung, -en</div><div class="gender">feminin</div><div class="en">bill / invoice</div></div>
+  <div class="vocab-card"><div class="de">Guten Appetit! / Mahlzeit!</div><div class="en">Enjoy your meal!</div></div>
+</div>
+<h3>City & Places</h3>
+<div class="vocab-grid">
+  <div class="vocab-card"><div class="de">der Bahnhof, -¨e</div><div class="gender">maskulin</div><div class="en">train station</div></div>
+  <div class="vocab-card"><div class="de">der Flughafen, -¨</div><div class="gender">maskulin</div><div class="en">airport</div></div>
+  <div class="vocab-card"><div class="de">die Bibliothek, -en</div><div class="gender">feminin</div><div class="en">library</div></div>
+  <div class="vocab-card"><div class="de">das Museum, Museen</div><div class="gender">neutrum</div><div class="en">museum</div></div>
+  <div class="vocab-card"><div class="de">das Kaufhaus, -¨er</div><div class="gender">neutrum</div><div class="en">department store</div></div>
+  <div class="vocab-card"><div class="de">das Kino, -s</div><div class="gender">neutrum</div><div class="en">cinema</div></div>
+  <div class="vocab-card"><div class="de">die Kirche, -n</div><div class="gender">feminin</div><div class="en">church</div></div>
+  <div class="vocab-card"><div class="de">der Supermarkt, -¨e</div><div class="gender">maskulin</div><div class="en">supermarket</div></div>
+</div>
+</section>
+
+<!-- ═══════ SENTENCES ═══════ -->
+<section id="sentences">
+<h2>✍️ Core Sentence Patterns</h2>
+<h3>Self-introduction</h3>
+<ul class="chunk-list">
+  <li><span class="chunk-de">Ich heiße ___.</span><span class="chunk-en">My name is ___.</span><span class="chunk-type">Identity</span></li>
+  <li><span class="chunk-de">Ich komme aus ___.</span><span class="chunk-en">I come from ___.</span><span class="chunk-type">Origin</span></li>
+  <li><span class="chunk-de">Ich wohne in ___.</span><span class="chunk-en">I live in ___.</span><span class="chunk-type">Location</span></li>
+  <li><span class="chunk-de">Ich bin ___ Jahre alt.</span><span class="chunk-en">I am ___ years old.</span><span class="chunk-type">Age</span></li>
+  <li><span class="chunk-de">Ich arbeite als ___.</span><span class="chunk-en">I work as a ___.</span><span class="chunk-type">Profession</span></li>
+  <li><span class="chunk-de">Ich lerne seit ___ Deutsch.</span><span class="chunk-en">I've been learning German for ___.</span><span class="chunk-type">Duration</span></li>
+  <li><span class="chunk-de">Meine Hobbys sind ___ und ___.</span><span class="chunk-en">My hobbies are ___ and ___.</span><span class="chunk-type">Hobbies</span></li>
+</ul>
+<h3>Making plans & arrangements</h3>
+<ul class="chunk-list">
+  <li><span class="chunk-de">Hast du am ___ Zeit?</span><span class="chunk-en">Do you have time on ___?</span><span class="chunk-type">Asking</span></li>
+  <li><span class="chunk-de">Wollen wir zusammen ___?</span><span class="chunk-en">Shall we ___ together?</span><span class="chunk-type">Suggestion</span></li>
+  <li><span class="chunk-de">Ja, gern! Das klingt super!</span><span class="chunk-en">Yes, gladly! That sounds great!</span><span class="chunk-type">Accepting</span></li>
+  <li><span class="chunk-de">Leider kann ich nicht. Ich muss ___.</span><span class="chunk-en">Unfortunately I can't. I have to ___.</span><span class="chunk-type">Declining</span></li>
+  <li><span class="chunk-de">Tut mir leid, ich habe keinen Zeit.</span><span class="chunk-en">Sorry, I have no time.</span><span class="chunk-type">Declining</span></li>
+</ul>
+<h3>Talking about the past</h3>
+<ul class="chunk-list">
+  <li><span class="chunk-de">Ich habe ___ gemacht.</span><span class="chunk-en">I did / made ___.</span><span class="chunk-type">Perfekt</span></li>
+  <li><span class="chunk-de">Ich bin nach ___ gefahren.</span><span class="chunk-en">I went/drove to ___.</span><span class="chunk-type">Perfekt+sein</span></li>
+  <li><span class="chunk-de">Wie war dein Tag?</span><span class="chunk-en">How was your day?</span><span class="chunk-type">Question</span></li>
+  <li><span class="chunk-de">Es war toll / langweilig / stressig.</span><span class="chunk-en">It was great / boring / stressful.</span><span class="chunk-type">Response</span></li>
+  <li><span class="chunk-de">Was hast du heute gemacht?</span><span class="chunk-en">What did you do today?</span><span class="chunk-type">Question</span></li>
+</ul>
+</section>
+
+<!-- ═══════ WRITING ═══════ -->
+<section id="writing">
+<h2>📓 Writing Templates</h2>
+<h3>Daily diary starter</h3>
+<div class="example"><strong>Fill in these blanks every day</strong>
+Heute ist _______________ (Wochentag), der _______________ (Datum).<br><br>
+Heute war ein _______________ Tag (gut / anstrengend / interessant / ruhig).<br><br>
+Am Morgen habe ich _______________. Dann _______________.<br><br>
+Zu Mittag habe ich _______________ gegessen. Am Nachmittag _______________.<br><br>
+Am Abend _______________. Das war _______________.<br><br>
+Morgen möchte / muss ich _______________.
+</div>
+
+<h3>Fake conversation template</h3>
+<div class="example"><strong>Scenario: making weekend plans</strong>
+A: Hallo ___! Wie geht's?<br>
+B: Danke, ___! Und dir?<br>
+A: Gut. Du, hast du am ___ Zeit? Wollen wir ___?<br>
+B: Am ___ kann ich leider nicht. Ich muss ___. Aber am ___ habe ich Zeit.<br>
+A: Super! Um wie viel Uhr?<br>
+B: Um ___ Uhr. Ist das okay?<br>
+A: Ja, perfekt! Dann bis ___!<br>
+B: Tschüss! Bis dann!
+</div>
+
+<h3>Describing your city</h3>
+<div class="example"><strong>Mini paragraph template</strong>
+Ich wohne in ___. Das ist eine ___ Stadt (groß / klein / schön / laut).<br>
+In ___ gibt es ___. Es gibt auch ___ und ___. Aber es gibt kein/keine/keinen ___.<br>
+Ich wohne gern / nicht gern in ___, weil ___.
+</div>
+</section>
+
+<!-- ═══════ CHUNKS ═══════ -->
+<section id="chunks">
+<h2>💬 Essential Chunks & Phrases</h2>
+<h3>Reactions & opinions</h3>
+<ul class="chunk-list">
+  <li><span class="chunk-de">Das ist toll / super / wunderbar!</span><span class="chunk-en">That's great / super / wonderful!</span><span class="chunk-type">Positive</span></li>
+  <li><span class="chunk-de">Das finde ich interessant / langweilig.</span><span class="chunk-en">I find that interesting / boring.</span><span class="chunk-type">Opinion</span></li>
+  <li><span class="chunk-de">Das klingt gut / interessant!</span><span class="chunk-en">That sounds good / interesting!</span><span class="chunk-type">Reaction</span></li>
+  <li><span class="chunk-de">Das macht (doch) nichts.</span><span class="chunk-en">That doesn't matter. / No problem.</span><span class="chunk-type">Reassurance</span></li>
+  <li><span class="chunk-de">Wie bitte? / Noch einmal bitte.</span><span class="chunk-en">Pardon? / Once more please.</span><span class="chunk-type">Clarification</span></li>
+  <li><span class="chunk-de">Das verstehe ich nicht.</span><span class="chunk-en">I don't understand that.</span><span class="chunk-type">Clarification</span></li>
+</ul>
+<h3>Formal email phrases</h3>
+<ul class="chunk-list">
+  <li><span class="chunk-de">Sehr geehrte/r Frau/Herr ___,</span><span class="chunk-en">Dear Ms/Mr ___,</span><span class="chunk-type">Opening</span></li>
+  <li><span class="chunk-de">Danke für Ihre Nachricht.</span><span class="chunk-en">Thank you for your message.</span><span class="chunk-type">Opening</span></li>
+  <li><span class="chunk-de">Leider kann ich am ___ nicht.</span><span class="chunk-en">Unfortunately I cannot on ___.</span><span class="chunk-type">Declining</span></li>
+  <li><span class="chunk-de">Geht es am ___ um ___ Uhr?</span><span class="chunk-en">Does ___ at ___:00 work?</span><span class="chunk-type">Suggesting</span></li>
+  <li><span class="chunk-de">Ich bitte um Rückmeldung.</span><span class="chunk-en">I would appreciate a reply.</span><span class="chunk-type">Closing</span></li>
+  <li><span class="chunk-de">Mit freundlichen Grüßen,</span><span class="chunk-en">Kind regards,</span><span class="chunk-type">Sign-off</span></li>
+</ul>
+</section>
+
+</div>
+
+<script>
+// ═══════ WEEK SCHEDULE DATA ═══════
+const weeks = [
+  {
+    title: "Week 1 — Foundations: Verbs, Greetings, Basics",
+    theme: "You focus on: verb conjugation, sein/haben, basic sentences, self-introduction",
+    days: [
+      { name: "Monday", color: "#534ab7", tasks: [
+        { time:"0–10 min", main:"10 new words: Greetings + basics", sub:"Hallo, Tschüss, Danke, Bitte, leider, gern, natürlich, Entschuldigung, tut mir leid, Wie geht's?", tag:"vocab" },
+        { time:"10–20 min", main:"Grammar: verb endings (-e, -st, -t, -en, -t, -en)", sub:"Study the table: kochen, lernen, machen. Say each form aloud.", tag:"grammar" },
+        { time:"20–30 min", main:"Input: Easy German #1 on YouTube", sub:"Watch with subtitles. Write 3 sentences you hear.", tag:"input" },
+        { time:"30–40 min", main:"Write: self-introduction (5 sentences)", sub:"Ich heiße... Ich komme aus... Ich wohne in... Ich lerne...", tag:"write" },
+      ]},
+      { name: "Tuesday", color: "#1d9e75", tasks: [
+        { time:"0–10 min", main:"Flashcard review — Monday's 10 words", sub:"Say each word aloud before flipping. 3x repetition for wrong ones.", tag:"review" },
+        { time:"10–20 min", main:"Grammar: sein (to be) conjugation", sub:"Memorise: bin/bist/ist/sind/seid/sind. Write 6 sentences with sein.", tag:"grammar" },
+        { time:"20–30 min", main:"10 new words: Numbers 1–20 + ordinals", sub:"eins, zwei, drei... zwanzig. erste, zweite, dritte...", tag:"vocab" },
+        { time:"30–40 min", main:"Speak aloud: introduce yourself", sub:"Record yourself for 1 minute. Name, origin, age, job, hobbies.", tag:"speak" },
+      ]},
+      { name: "Wednesday", color: "#ba7517", tasks: [
+        { time:"0–10 min", main:"Flashcard review: all words so far", sub:"Focus on: say the German FIRST before looking at English.", tag:"review" },
+        { time:"10–20 min", main:"Grammar: haben (to have) conjugation", sub:"habe/hast/hat/haben/habt/haben. Make 6 sentences.", tag:"grammar" },
+        { time:"20–30 min", main:"Input: Peppa Pig auf Deutsch (ep. 1)", sub:"Watch twice. Write any word you recognise.", tag:"input" },
+        { time:"30–40 min", main:"'Wanted to say' list", sub:"Write 3 things you wanted to say this week but couldn't.", tag:"write" },
+      ]},
+      { name: "Thursday", color: "#993c1d", tasks: [
+        { time:"0–10 min", main:"10 new words: Family vocabulary", sub:"die Mutter, der Vater, der Bruder, die Schwester, die Eltern, die Geschwister, der Opa, die Oma, der Onkel, die Tante", tag:"vocab" },
+        { time:"10–20 min", main:"Grammar: W-Fragen (who/what/when/where/why)", sub:"Wer, Was, Wann, Wo, Woher, Warum, Wie. Build one question each.", tag:"grammar" },
+        { time:"20–30 min", main:"Exercises: conjugate 5 verbs with all pronouns", sub:"lernen, spielen, arbeiten, kommen, heißen", tag:"grammar" },
+        { time:"30–40 min", main:"Write: describe your family (5 sentences)", sub:"Ich habe... Meine Mutter heißt... Mein Vater ist... Wir wohnen in...", tag:"write" },
+      ]},
+      { name: "Friday", color: "#185fa5", tasks: [
+        { time:"0–10 min", main:"Flashcard review: all week's vocabulary", sub:"Say every word aloud. Sort into: easy / still learning.", tag:"review" },
+        { time:"10–20 min", main:"Grammar: irregular verbs (lesen, sprechen, fahren)", sub:"Note: e→ie and e→i changes in du/er forms.", tag:"grammar" },
+        { time:"20–30 min", main:"'Wanted to say' lookup", sub:"Look up everything from your list this week. Write proper sentences.", tag:"write" },
+        { time:"30–40 min", main:"Diary entry in German", sub:"Heute ist Freitag. Heute habe ich... Das war...", tag:"write" },
+      ]},
+      { name: "Saturday", color: "#3b6d11", tasks: [
+        { time:"0–15 min", main:"Full week flashcard review + speak aloud", sub:"All 50 words. Say German → think English. Then English → say German.", tag:"review" },
+        { time:"15–30 min", main:"Watch: Deutsche Welle 'Nico's Weg' Ep 1–3", sub:"Free online. With subtitles. Pause and repeat sentences.", tag:"input" },
+        { time:"30–45 min", main:"Grammar deep dive: V2 rule (verb position 2)", sub:"Learn: statement, W-question, Ja/Nein question structures.", tag:"grammar" },
+        { time:"45–60 min", main:"Write: longer diary (8–10 sentences)", sub:"Use sein, haben, and 3 regular verbs. Past: Heute habe ich... Ich bin...", tag:"write" },
+      ]},
+      { name: "Sunday", color: "#a32d2d", tasks: [
+        { time:"0–15 min", main:"Identify 5 grammar patterns from week's writing", sub:"Circle every verb. Label: subject, verb, object.", tag:"review" },
+        { time:"15–30 min", main:"Speak: record 2-minute self-introduction", sub:"Listen back. Note 2 things to improve.", tag:"speak" },
+        { time:"30–45 min", main:"Write: fake conversation (meeting someone)", sub:"A greets B. They introduce themselves. Exchange names/origins/jobs.", tag:"write" },
+        { time:"45–60 min", main:"Plan next week: write your top 10 words to learn", sub:"Look ahead at Week 2 theme. Prepare your flashcards.", tag:"review" },
+      ]},
+    ]
+  },
+  {
+    title: "Week 2 — Articles, Nouns, Genders",
+    theme: "You focus on: der/die/das, plurals, noun genders, negative articles kein/keine",
+    days: [
+      { name: "Monday", color: "#534ab7", tasks: [
+        { time:"0–10 min", main:"10 new words: Household objects with articles", sub:"der Stuhl, der Tisch, das Bett, das Fenster, die Lampe, die Tür, der Schrank, das Sofa, die Küche, das Bad", tag:"vocab" },
+        { time:"10–20 min", main:"Grammar: der/die/das — 3 genders", sub:"Study gender tips. Colour-code: blue=der, red=die, green=das.", tag:"grammar" },
+        { time:"20–25 min", main:"Input: song — 'Ich bin ich' (Ayliva) or any German pop", sub:"Read lyrics (Genius.com), identify nouns and their articles.", tag:"input" },
+        { time:"25–40 min", main:"Write: describe your room with articles", sub:"In meinem Zimmer gibt es ein Bett, einen Schrank, eine Lampe...", tag:"write" },
+      ]},
+      { name: "Tuesday", color: "#1d9e75", tasks: [
+        { time:"0–10 min", main:"Flashcard review: household vocab", sub:"Cover German, say English. Then cover English, say German + article.", tag:"review" },
+        { time:"10–20 min", main:"Grammar: kein/keine/kein negation", sub:"Maskulin: kein. Feminin: keine. Neutrum: kein. Plural: keine.", tag:"grammar" },
+        { time:"20–30 min", main:"10 new words: City buildings + places", sub:"der Bahnhof, der Flughafen, die Bibliothek, das Kaufhaus, das Museum, die Kirche, das Kino, das Theater, der Supermarkt, der Markt", tag:"vocab" },
+        { time:"30–40 min", main:"Write: describe your city (what exists / doesn't)", sub:"In ___ gibt es einen Bahnhof. Es gibt keine Oper.", tag:"write" },
+      ]},
+      { name: "Wednesday", color: "#ba7517", tasks: [
+        { time:"0–10 min", main:"Flashcard review: all nouns so far (with articles)", sub:"ALWAYS say the article first: 'der Stuhl, der Stuhl...'", tag:"review" },
+        { time:"10–20 min", main:"Grammar: plural forms — 5 patterns", sub:"Study: -e, -en, -er, no change, -s. Find 2 examples of each.", tag:"grammar" },
+        { time:"20–30 min", main:"Input: Slow German podcast #1", sub:"Listen once without subtitles. Then with transcript.", tag:"input" },
+        { time:"30–40 min", main:"'Wanted to say' list — 3 entries", sub:"Focus on: things you couldn't describe because you lacked the noun.", tag:"write" },
+      ]},
+      { name: "Thursday", color: "#993c1d", tasks: [
+        { time:"0–10 min", main:"10 new words: Food vocabulary with articles", sub:"die Banane, der Apfel, die Tomate, der Käse, die Kartoffel, das Brot, die Milch, der Kaffee, das Wasser, der Saft", tag:"vocab" },
+        { time:"10–20 min", main:"Grammar: es gibt + indefinite article", sub:"es gibt einen/eine/ein... / es gibt keinen/keine/kein...", tag:"grammar" },
+        { time:"20–30 min", main:"Exercises: article matching — 20 nouns", sub:"Without looking: write der/die/das before each noun from memory.", tag:"grammar" },
+        { time:"30–40 min", main:"Write: shopping list + sentences", sub:"Ich brauche einen Käse, eine Milch, ein Brot...", tag:"write" },
+      ]},
+      { name: "Friday", color: "#185fa5", tasks: [
+        { time:"0–10 min", main:"Full vocab review: all week's nouns", sub:"Quiz yourself: English prompt → German with article, no peeking.", tag:"review" },
+        { time:"10–20 min", main:"Confusing pair: nach vs zu (study this section)", sub:"Write 5 sentences with nach and 5 with zu.", tag:"grammar" },
+        { time:"20–30 min", main:"Input: Easy German video about German cities", sub:"Write every noun you hear with its article.", tag:"input" },
+        { time:"30–40 min", main:"Diary entry: describe yesterday", sub:"Gestern war ich in... Ich habe... gesehen. Es gibt... in meiner Stadt.", tag:"write" },
+      ]},
+      { name: "Saturday", color: "#3b6d11", tasks: [
+        { time:"0–15 min", main:"Mega flashcard review: Weeks 1+2 (all words)", sub:"Two piles: confident / still learning. Focus on still-learning pile.", tag:"review" },
+        { time:"15–30 min", main:"Watch: Peppa Pig auf Deutsch ep. 5–8", sub:"Note every noun you recognise. Check articles.", tag:"input" },
+        { time:"30–45 min", main:"Grammar: gender guessing rules deep dive", sub:"Endings: -ung, -heit → die. -chen → das. -ling → der. Test with 20 new words.", tag:"grammar" },
+        { time:"45–60 min", main:"Write: paragraph about your ideal home", sub:"In meinem idealen Haus gibt es... Ich möchte ein... haben.", tag:"write" },
+      ]},
+      { name: "Sunday", color: "#a32d2d", tasks: [
+        { time:"0–15 min", main:"Grammar identification: find all articles in your writing", sub:"Underline every article. Check: correct gender? correct case?", tag:"review" },
+        { time:"15–30 min", main:"Speak: describe a room aloud (1.5 min)", sub:"Record. Use: Das ist... Hier steht/liegt/hängt... Es gibt...", tag:"speak" },
+        { time:"30–45 min", main:"Write: fake conversation — in a shop", sub:"Vendor offers items. Customer asks prices. Customer buys or refuses.", tag:"write" },
+        { time:"45–60 min", main:"'Confusing words' notebook: nach/zu/in entries", sub:"Write rule + 3 examples + your own sentence for each.", tag:"review" },
+      ]},
+    ]
+  },
+  {
+    title: "Week 3 — Cases: Nominativ & Akkusativ",
+    theme: "You focus on: subject vs object, article changes, personal pronouns, possessives",
+    days: [
+      { name: "Monday", color: "#534ab7", tasks: [
+        { time:"0–10 min", main:"10 new words: Drinks + ordering", sub:"der Kaffee, der Tee, das Wasser, die Limonade, das Bier, der Wein, der Saft, die Milch, der Espresso, die Schokolade", tag:"vocab" },
+        { time:"10–20 min", main:"Grammar: Nominativ = subject (who does the action)", sub:"Der Mann kauft... Die Frau bestellt... Das Kind isst... Identify subjects in 10 sentences.", tag:"grammar" },
+        { time:"20–30 min", main:"Grammar: Akkusativ = object (what is acted upon)", sub:"Only maskulin changes: der→den, ein→einen, kein→keinen.", tag:"grammar" },
+        { time:"30–40 min", main:"Write: ordering at a cafe (10 sentences)", sub:"Ich bestelle einen Kaffee. Er nimmt einen Tee. Sie trinkt eine Limonade.", tag:"write" },
+      ]},
+      { name: "Tuesday", color: "#1d9e75", tasks: [
+        { time:"0–10 min", main:"Flashcard review + 10 new: personal pronouns", sub:"mich/dich/ihn/sie/es/uns/euch/sie — Akkusativ forms", tag:"vocab" },
+        { time:"10–20 min", main:"Grammar: pronoun cases table", sub:"Study: ich→mich, du→dich, er→ihn, sie→sie, wir→uns, ihr→euch", tag:"grammar" },
+        { time:"20–30 min", main:"Input: Watch German restaurant scene on YouTube", sub:"Any German film/show clip with ordering food. Note Akkusativ.", tag:"input" },
+        { time:"30–40 min", main:"Write: pronoun replacement practice", sub:"Replace all nouns with pronouns in 10 sentences.", tag:"write" },
+      ]},
+      { name: "Wednesday", color: "#ba7517", tasks: [
+        { time:"0–10 min", main:"Flashcard review: pronouns + last week's vocab", sub:"Extra focus: ihn vs ihm (Akkusativ vs Dativ — preview).", tag:"review" },
+        { time:"10–20 min", main:"Grammar: possessives — mein/dein/sein/ihr/unser", sub:"Pattern: same endings as ein/kein. Maskulin Akkusativ: meinen.", tag:"grammar" },
+        { time:"20–30 min", main:"Input: Slow German podcast #2", sub:"Listen for: every noun. Can you catch the articles?", tag:"input" },
+        { time:"30–40 min", main:"'Wanted to say' list: 3 entries", sub:"Focus on: things you wanted to describe as belonging to someone.", tag:"write" },
+      ]},
+      { name: "Thursday", color: "#993c1d", tasks: [
+        { time:"0–10 min", main:"10 new words: Clothing", sub:"das T-Shirt, die Hose, der Pullover, die Jacke, die Schuhe (pl.), das Kleid, der Rock, die Mütze, der Mantel, die Jeans", tag:"vocab" },
+        { time:"10–20 min", main:"Grammar: tragen (to wear/carry) conjugation", sub:"trage/trägst/trägt/tragen/tragt/tragen. Note e→ä change.", tag:"grammar" },
+        { time:"20–30 min", main:"Exercises: fill in the correct article (Nom. or Akk.)", sub:"___ Rucksack (der/den). Ich brauche ___ Stift (ein/einen).", tag:"grammar" },
+        { time:"30–40 min", main:"Write: describe what you're wearing", sub:"Heute trage ich... Meine Jacke ist... Ich mag meinen/meine/mein...", tag:"write" },
+      ]},
+      { name: "Friday", color: "#185fa5", tasks: [
+        { time:"0–10 min", main:"Full vocab review: Weeks 1–3", sub:"Create a 'still learning' flashcard deck. These get extra attention this weekend.", tag:"review" },
+        { time:"10–20 min", main:"Confusing pair study: wissen vs kennen", sub:"Write 5 wissen sentences, 5 kennen sentences.", tag:"grammar" },
+        { time:"20–30 min", main:"Input: Watch a German fashion/shopping video", sub:"Easy German or similar. Note clothing words and case usage.", tag:"input" },
+        { time:"30–40 min", main:"Diary: what did you buy/wear/eat this week?", sub:"Ich habe... gekauft. Ich trage... Gestern habe ich... gegessen.", tag:"write" },
+      ]},
+      { name: "Saturday", color: "#3b6d11", tasks: [
+        { time:"0–15 min", main:"Mega review: Nominativ vs Akkusativ quiz", sub:"Write 10 sentences. Check every article. Correct and rewrite wrong ones.", tag:"review" },
+        { time:"15–35 min", main:"Watch: Deutsche Welle Nico's Weg Ep. 4–7", sub:"Note: every sentence with an object. What case is it?", tag:"input" },
+        { time:"35–50 min", main:"Grammar: demonstrative pronouns dieser/diese/dieses", sub:"dieser (der), diese (die), dieses (das). Same endings as der/die/das.", tag:"grammar" },
+        { time:"50–60 min", main:"Write: shopping dialogue (6 exchanges)", sub:"Salesperson and customer. Use: dieser Pullover, diese Jacke, dieses Kleid.", tag:"write" },
+      ]},
+      { name: "Sunday", color: "#a32d2d", tasks: [
+        { time:"0–15 min", main:"Confusing words notebook: possessives + articles", sub:"mein vs meinen. Write the rule. 3 examples each.", tag:"review" },
+        { time:"15–30 min", main:"Speak: describe someone's appearance (1.5 min)", sub:"Er trägt... Sie hat... Das Mädchen trägt... Sein Pullover ist...", tag:"speak" },
+        { time:"30–50 min", main:"Write: short story (8–10 sentences)", sub:"A person goes shopping. They buy/don't buy things. Use Akkusativ throughout.", tag:"write" },
+        { time:"50–60 min", main:"Preview Week 4: modal verbs", sub:"Read the modal verb table. Say each form of 'müssen' and 'können' aloud.", tag:"review" },
+      ]},
+    ]
+  },
+  {
+    title: "Week 4 — Modal Verbs + Daily Life",
+    theme: "You focus on: müssen/können/wollen/möchten/dürfen/sollen, daily routines, making excuses",
+    days: [
+      { name: "Monday", color: "#534ab7", tasks: [
+        { time:"0–10 min", main:"10 new words: Daily routine verbs", sub:"aufstehen, frühstücken, arbeiten, Pause machen, einkaufen, kochen, schlafen, aufräumen, fernsehen, duschen", tag:"vocab" },
+        { time:"10–20 min", main:"Grammar: müssen and können — full conjugation", sub:"Memorise ich/du/er forms (irregular). Write 6 sentences each.", tag:"grammar" },
+        { time:"20–30 min", main:"Grammar: modal + infinitive at END structure", sub:"Ich muss heute lernen. Sie kann morgen kommen. Practice with 10 sentences.", tag:"grammar" },
+        { time:"30–40 min", main:"Write: your daily schedule with modals", sub:"Um 7 Uhr muss ich aufstehen. Um 9 Uhr kann ich...", tag:"write" },
+      ]},
+      { name: "Tuesday", color: "#1d9e75", tasks: [
+        { time:"0–10 min", main:"Flashcard review + 10 new: wollen/möchten/dürfen", sub:"Key: wollen = strong want. möchten = polite would like. dürfen = may/allowed.", tag:"vocab" },
+        { time:"10–20 min", main:"Grammar: wollen vs möchten (subtle difference)", sub:"Ich will Kaffee. (direct) vs Ich möchte Kaffee. (polite). Context matters.", tag:"grammar" },
+        { time:"20–30 min", main:"Input: Watch German daily routine video on YouTube", sub:"'Mein Alltag auf Deutsch' type videos. Note modal verbs.", tag:"input" },
+        { time:"30–40 min", main:"Write: what you want to do vs have to do", sub:"Ich möchte... aber ich muss... Ich will... aber ich kann... nicht.", tag:"write" },
+      ]},
+      { name: "Wednesday", color: "#ba7517", tasks: [
+        { time:"0–10 min", main:"Flashcard review: all modal verbs", sub:"Test: ich/du/er forms for all 6 modal verbs without looking.", tag:"review" },
+        { time:"10–20 min", main:"Confusing pair: müssen vs sollen (study pair section)", sub:"Write 5 müssen sentences, 5 sollen sentences.", tag:"grammar" },
+        { time:"20–30 min", main:"Input: Slow German #3 or Coffee Break German", sub:"Listen for modal verbs. Count how many you hear.", tag:"input" },
+        { time:"30–40 min", main:"'Wanted to say' list + look up", sub:"Situations where you wanted to express ability/necessity/permission.", tag:"write" },
+      ]},
+      { name: "Thursday", color: "#993c1d", tasks: [
+        { time:"0–10 min", main:"10 new words: Health and feelings", sub:"müde, krank, gesund, Hunger haben, Durst haben, Schmerzen haben, Kopfschmerzen, sich wohlfühlen, fit, erschöpft", tag:"vocab" },
+        { time:"10–20 min", main:"Grammar: sollen + dürfen — external obligation and permission", sub:"Du sollst das nicht machen. Darf ich...? Hier darf man nicht rauchen.", tag:"grammar" },
+        { time:"20–30 min", main:"Exercises: choose the right modal verb (10 sentences)", sub:"___ ich das Fenster öffnen? / Sie ___ pünktlich sein. / Er ___ mehr schlafen.", tag:"grammar" },
+        { time:"30–40 min", main:"Write: making excuses (5 exchanges)", sub:"A invites B. B declines with a modal verb reason. 5 different excuses.", tag:"write" },
+      ]},
+      { name: "Friday", color: "#185fa5", tasks: [
+        { time:"0–10 min", main:"Full week review: all modals without notes", sub:"Write the full table from memory. Check and correct.", tag:"review" },
+        { time:"10–20 min", main:"Confusing pair: lernen vs studieren", sub:"5 sentences each. Include context (school/university).", tag:"grammar" },
+        { time:"20–30 min", main:"Input: Easy German episode about jobs/work", sub:"Listen for: was müssen Sie bei der Arbeit machen?", tag:"input" },
+        { time:"30–40 min", main:"Diary: what did you have to / want to do this week?", sub:"Diese Woche musste ich... Ich wollte... aber ich konnte nicht.", tag:"write" },
+      ]},
+      { name: "Saturday", color: "#3b6d11", tasks: [
+        { time:"0–15 min", main:"Mega review: Weeks 1–4 flashcards", sub:"Rapid-fire. 3 seconds per card. Move slow ones to a special pile.", tag:"review" },
+        { time:"15–35 min", main:"Watch: German film clip (any A2 level)", sub:"Recommended: 'Conni' children's series, 'Türkisch für Anfänger' (slow scenes)", tag:"input" },
+        { time:"35–50 min", main:"Grammar: Ja/Nein questions with modals", sub:"Kannst du morgen kommen? — Ja, ich kann. / Nein, leider nicht.", tag:"grammar" },
+        { time:"50–60 min", main:"Write: weekly planner in German", sub:"Am Montag muss ich... Am Dienstag will ich... Am Freitag kann ich...", tag:"write" },
+      ]},
+      { name: "Sunday", color: "#a32d2d", tasks: [
+        { time:"0–20 min", main:"Full conversation practice: plans and excuses", sub:"Write 3 complete dialogues. One accepting, one declining, one rescheduling.", tag:"write" },
+        { time:"20–35 min", main:"Speak: monologue about your week's obligations", sub:"Diese Woche muss ich... Ich kann... Ich möchte... (2 minutes)", tag:"speak" },
+        { time:"35–50 min", main:"Confusing words notebook: modal pairs", sub:"müssen/sollen, wollen/möchten, können/dürfen — rule + examples.", tag:"review" },
+        { time:"50–60 min", main:"Preview Week 5: Perfekt tense", sub:"Read through the Partizip II table. Say 10 Partizip II forms aloud.", tag:"review" },
+      ]},
+    ]
+  },
+  {
+    title: "Week 5 — Perfekt Tense (Past)",
+    theme: "You focus on: haben vs sein, regular and irregular Partizip II, telling stories about the past",
+    days: [
+      { name: "Monday", color: "#534ab7", tasks: [
+        { time:"0–10 min", main:"10 new words: Irregular Partizip II (haben verbs)", sub:"gegessen, getrunken, geschrieben, gelesen, gemacht, gesehen, genommen, geschlafen, gesprochen, gewusst", tag:"vocab" },
+        { time:"10–20 min", main:"Grammar: Perfekt structure — haben + Partizip II at end", sub:"Subject + habe/hat/haben... + Partizip II. Write 8 sentences.", tag:"grammar" },
+        { time:"20–30 min", main:"Grammar: Regular Partizip II (ge- + stem + -t)", sub:"kochen→gekocht, lernen→gelernt, machen→gemacht, spielen→gespielt. Write 10.", tag:"grammar" },
+        { time:"30–40 min", main:"Write: what did you do yesterday?", sub:"Gestern habe ich... gegessen. Ich habe... getrunken. Ich habe... gemacht.", tag:"write" },
+      ]},
+      { name: "Tuesday", color: "#1d9e75", tasks: [
+        { time:"0–10 min", main:"Flashcard review + 10 new: sein Perfekt verbs", sub:"gegangen, gefahren, gekommen, geblieben, gereist, gelaufen, aufgestanden, angekommen, geflogen, passiert", tag:"vocab" },
+        { time:"10–20 min", main:"Grammar: sein Perfekt — movement and change of state", sub:"Ich bin gegangen. Wir sind gefahren. Sie ist aufgestanden. 8 sentences.", tag:"grammar" },
+        { time:"20–30 min", main:"Input: Deutsche Welle Nico's Weg Ep. 8–10", sub:"Note: every Perfekt sentence. Which helper — haben or sein?", tag:"input" },
+        { time:"30–40 min", main:"Write: story about a trip (10 sentences)", sub:"Mix haben and sein Perfekt. Ich bin nach... gefahren. Dort habe ich...", tag:"write" },
+      ]},
+      { name: "Wednesday", color: "#ba7517", tasks: [
+        { time:"0–10 min", main:"Flashcard review: all Partizip II forms", sub:"Infinitive on front, Partizip II on back. Self-test, 3 passes.", tag:"review" },
+        { time:"10–20 min", main:"Grammar: -ieren verbs → no ge- prefix!", sub:"studieren→studiert, fotografieren→fotografiert, telefonieren→telefoniert.", tag:"grammar" },
+        { time:"20–30 min", main:"Grammar: separable verbs in Perfekt (ge- in middle)", sub:"aufräumen→aufgeräumt, anrufen→angerufen, einladen→eingeladen.", tag:"grammar" },
+        { time:"30–40 min", main:"'Wanted to say' — past tense edition", sub:"3 things you wanted to say about last week but couldn't in German.", tag:"write" },
+      ]},
+      { name: "Thursday", color: "#993c1d", tasks: [
+        { time:"0–10 min", main:"10 new words: Reaction and time words", sub:"schon, noch, erst, bereits, gerade, endlich, plötzlich, danach, vorher, gleichzeitig", tag:"vocab" },
+        { time:"10–20 min", main:"Grammar: Perfekt questions and negation", sub:"Hast du... gemacht? Ja, ich habe... Nein, ich habe... nicht gemacht.", tag:"grammar" },
+        { time:"20–30 min", main:"Exercises: Transform present → Perfekt (15 sentences)", sub:"Ich esse Pizza. → Ich habe Pizza gegessen. Ich gehe ins Kino. → Ich bin...", tag:"grammar" },
+        { time:"30–40 min", main:"Write: weekend diary in Perfekt (10 sentences)", sub:"Am Samstag bin ich... Am Sonntag habe ich... Dann habe ich...", tag:"write" },
+      ]},
+      { name: "Friday", color: "#185fa5", tasks: [
+        { time:"0–10 min", main:"Full review: haben vs sein quiz (20 verbs)", sub:"Write: haben or sein? For: gehen, kochen, fliegen, essen, kommen, schreiben...", tag:"review" },
+        { time:"10–20 min", main:"Confusing pair: seit vs vor (study pair section)", sub:"seit zwei Jahren vs vor zwei Jahren. Write 5 each.", tag:"grammar" },
+        { time:"20–30 min", main:"Input: German vlog or travel video on YouTube", sub:"Listen for Perfekt. Pause and repeat sentences you hear.", tag:"input" },
+        { time:"30–40 min", main:"Diary: this week in Perfekt", sub:"Diese Woche habe ich... gelernt. Ich bin... gegangen. Das hat mir gefallen.", tag:"write" },
+      ]},
+      { name: "Saturday", color: "#3b6d11", tasks: [
+        { time:"0–15 min", main:"Mega flashcard: Partizip II forms (50 verbs)", sub:"No notes. Sort: confident / unsure. Restudy unsure pile.", tag:"review" },
+        { time:"15–35 min", main:"Watch: German short film or episode (30 min)", sub:"Recommended: any German series on Netflix with German subtitles.", tag:"input" },
+        { time:"35–55 min", main:"Grammar deep dive: Präteritum of sein/haben", sub:"war/warst/war/waren/wart/waren. hatte/hattest/hatte... (used even in speech!)", tag:"grammar" },
+        { time:"55–60 min", main:"Write: 5 sentences about childhood", sub:"Als ich jung war, habe ich... / Als ich 10 war, bin ich...", tag:"write" },
+      ]},
+      { name: "Sunday", color: "#a32d2d", tasks: [
+        { time:"0–20 min", main:"Write: full story in Perfekt (15 sentences)", sub:"Character goes on a day trip. Start: Am Morgen ist er/sie aufgestanden...", tag:"write" },
+        { time:"20–35 min", main:"Speak: tell your week's story aloud (2 min)", sub:"Record. Use only Perfekt. No present tense allowed this round!", tag:"speak" },
+        { time:"35–50 min", main:"Confusing words: als vs wenn vs wann", sub:"All three 'when' words. Rule + 3 examples each in notebook.", tag:"review" },
+        { time:"50–60 min", main:"Preview Week 6: weil, connectors, recap", sub:"Read the weil section. Write 3 weil sentences now.", tag:"review" },
+      ]},
+    ]
+  },
+  {
+    title: "Week 6 — Connectors, Review & Production",
+    theme: "You focus on: weil/denn/aber/und/oder/sondern, prepositions deep dive, full review",
+    days: [
+      { name: "Monday", color: "#534ab7", tasks: [
+        { time:"0–10 min", main:"10 new words: Connector words and discourse markers", sub:"weil, denn, aber, und, oder, sondern, deshalb, trotzdem, außerdem, zum Beispiel", tag:"vocab" },
+        { time:"10–20 min", main:"Grammar: weil — verb to the end", sub:"Study the weil rule. Write 8 weil sentences. Check: verb at end?", tag:"grammar" },
+        { time:"20–30 min", main:"Grammar: aber/und/oder/sondern — Position 0 connectors", sub:"Normal word order after these. No verb movement. Write 5 each.", tag:"grammar" },
+        { time:"30–40 min", main:"Write: give reasons for everything (weil)", sub:"Ich lerne Deutsch, weil... Ich esse gern Pizza, weil... (5 sentences)", tag:"write" },
+      ]},
+      { name: "Tuesday", color: "#1d9e75", tasks: [
+        { time:"0–10 min", main:"Flashcard review + 10 new: preposition vocabulary", sub:"am Morgen, am Abend, im Januar, im Sommer, um 8 Uhr, von...bis, seit, vor, nach, bei", tag:"vocab" },
+        { time:"10–20 min", main:"Grammar: dative prepositions deep dive", sub:"mit, bei (beim), von (vom), zu (zum/zur), nach, aus, seit. Full table.", tag:"grammar" },
+        { time:"20–30 min", main:"Input: Easy German — 'Why do you learn German?'", sub:"Guaranteed to hear weil many times. Count them!", tag:"input" },
+        { time:"30–40 min", main:"Write: answer 5 questions with weil/denn", sub:"Warum lernst du Deutsch? Warum lebst du in ___? Warum magst du ___?", tag:"write" },
+      ]},
+      { name: "Wednesday", color: "#ba7517", tasks: [
+        { time:"0–10 min", main:"Full flashcard review: all 6 weeks' words", sub:"Final pass of everything. Only keep cards you still miss.", tag:"review" },
+        { time:"10–20 min", main:"Grammar: location prepositions (Wo? vs Wohin?)", sub:"Wo: Dativ. Wohin: Akkusativ. Lie/lay (liegen/legen), stand/place (stehen/stellen).", tag:"grammar" },
+        { time:"20–30 min", main:"Input: German podcast — any topic you enjoy now", sub:"You've come far! Try content slightly above your level.", tag:"input" },
+        { time:"30–40 min", main:"'Wanted to say' — final list of the course", sub:"What are the 5 most important phrases you still can't say?", tag:"write" },
+      ]},
+      { name: "Thursday", color: "#993c1d", tasks: [
+        { time:"0–10 min", main:"10 new words: emotions and states", sub:"glücklich, traurig, aufgeregt, nervös, entspannt, wütend, zufrieden, neugierig, überrascht, enttäuscht", tag:"vocab" },
+        { time:"10–20 min", main:"Grammar: adjective endings (intro)", sub:"Ein kalter Kaffee. Eine schöne Stadt. Ein gutes Restaurant. Learn -er/-e/-es for Nominativ.", tag:"grammar" },
+        { time:"20–30 min", main:"Exercises: combine everything — case + modal + Perfekt", sub:"Write 10 complex sentences using what you know.", tag:"grammar" },
+        { time:"30–40 min", main:"Write: a complaint or review (6 sentences)", sub:"Das Restaurant war gut, aber... Der Kellner hat... Das Essen hat mir... weil...", tag:"write" },
+      ]},
+      { name: "Friday", color: "#185fa5", tasks: [
+        { time:"0–10 min", main:"Full grammar review: identify rules in a paragraph", sub:"Take a German paragraph. Label: verb position, cases, connector type.", tag:"review" },
+        { time:"10–20 min", main:"Confusing pairs: final review of all 12 pairs", sub:"Go through every pair in this guide. Can you state the rule in 5 seconds?", tag:"grammar" },
+        { time:"20–30 min", main:"Input: watch something you enjoy entirely in German", sub:"No English subtitles this time. Challenge yourself!", tag:"input" },
+        { time:"30–40 min", main:"Write: letter to future self in German", sub:"Liebe/r [Name], In 6 Wochen habe ich Deutsch gelernt. Ich habe... gelernt.", tag:"write" },
+      ]},
+      { name: "Saturday", color: "#3b6d11", tasks: [
+        { time:"0–20 min", main:"FINAL MEGA REVIEW: All grammar tables", sub:"Articles, cases, verb conjugation, modals, Perfekt, prepositions. Open notes to check.", tag:"review" },
+        { time:"20–40 min", main:"Watch: full German episode or short film", sub:"Enjoy it. You deserve it. Note vocabulary naturally, don't force it.", tag:"input" },
+        { time:"40–55 min", main:"Write: 15-sentence autobiographical paragraph", sub:"Everything you've learned. Past, present, future plans. Use weil.", tag:"write" },
+        { time:"55–60 min", main:"Plan: what to study in weeks 7–12", sub:"A2 topics ahead: Präteritum, Konjunktiv II, adjective endings, relative clauses.", tag:"review" },
+      ]},
+      { name: "Sunday", color: "#a32d2d", tasks: [
+        { time:"0–20 min", main:"FINAL SPEAK: Record 3-minute self-introduction", sub:"Everything: who you are, your life, your week, your plans. Use German only!", tag:"speak" },
+        { time:"20–35 min", main:"Write: fake conversation — full scenario", sub:"Two people meet, make plans, one cancels with reasons, they reschedule.", tag:"write" },
+        { time:"35–50 min", main:"Confusing words notebook: final review", sub:"Read every entry. Test yourself on all 12 pairs.", tag:"review" },
+        { time:"50–60 min", main:"Celebrate! 🎉 You completed 6 weeks!", sub:"Make a list: 10 things you can now do in German that you couldn't before.", tag:"review" },
+      ]},
+    ]
+  }
+];
+
+function showWeek(idx) {
+  document.querySelectorAll('.week-tab').forEach((t,i) => t.classList.toggle('active', i===idx));
+  const container = document.getElementById('weekContents');
+  const w = weeks[idx];
+  const tagClass = { vocab:'tag-vocab', grammar:'tag-grammar', write:'tag-write', input:'tag-input', speak:'tag-speak', review:'tag-review' };
+  const tagLabel = { vocab:'Vocab', grammar:'Grammar', write:'Write', input:'Input', speak:'Speak', review:'Review' };
+  
+  let html = `<div style="background:#eeedfe;border-radius:10px;padding:1rem 1.2rem;margin-bottom:1.2rem;font-family:sans-serif;font-size:0.9rem;"><strong style="color:#3c3489;">${w.title}</strong><br><span style="color:#5f5e5a;font-size:0.85rem;">${w.theme}</span></div>`;
+  
+  w.days.forEach(day => {
+    html += `<div class="day-schedule"><div class="day-header" style="background:${day.color};">${day.name}</div><div class="day-body">`;
+    day.tasks.forEach(t => {
+      html += `<div class="task-row"><div class="task-time">${t.time}</div><div class="task-content"><div class="task-main">${t.main}</div><div class="task-sub">${t.sub}</div></div><span class="task-tag ${tagClass[t.tag]}">${tagLabel[t.tag]}</span></div>`;
+    });
+    html += `</div></div>`;
+  });
+  
+  container.innerHTML = html;
+}
+
+showWeek(0);
+
+// ═══════ DICTIONARY ═══════
+const dictionary = [
+  { de: "der Rucksack", article: "der • maskulin", type: "noun, -¨e", meanings: [{ en: "backpack, rucksack", ex_de: "Mein Rucksack ist sehr schwer.", ex_en: "My backpack is very heavy." }] },
+  { de: "die Tasche", article: "die • feminin", type: "noun, -n", meanings: [{ en: "bag, handbag, pocket", ex_de: "Ich habe meine Tasche vergessen.", ex_en: "I forgot my bag." }] },
+  { de: "das Buch", article: "das • neutrum", type: "noun, -¨er", meanings: [{ en: "book", ex_de: "Ich lese gern Bücher.", ex_en: "I like reading books." }] },
+  { de: "kochen", article: "", type: "verb (regular)", meanings: [{ en: "to cook", ex_de: "Ich koche heute Abend Pasta.", ex_en: "I'm cooking pasta tonight." }, { en: "to boil (water)", ex_de: "Das Wasser kocht.", ex_en: "The water is boiling." }] },
+  { de: "lernen", article: "", type: "verb (regular)", meanings: [{ en: "to learn, to study", ex_de: "Ich lerne seit einem Jahr Deutsch.", ex_en: "I've been learning German for a year." }] },
+  { de: "studieren", article: "", type: "verb (-ieren)", meanings: [{ en: "to study at university", ex_de: "Er studiert Medizin in Berlin.", ex_en: "He studies medicine in Berlin." }] },
+  { de: "wissen", article: "", type: "verb (irregular)", meanings: [{ en: "to know (facts/information)", ex_de: "Ich weiß die Antwort nicht.", ex_en: "I don't know the answer." }] },
+  { de: "kennen", article: "", type: "verb (regular)", meanings: [{ en: "to know (people/places — familiarity)", ex_de: "Kennst du dieses Restaurant?", ex_en: "Do you know this restaurant?" }] },
+  { de: "fahren", article: "", type: "verb (e→ä)", meanings: [{ en: "to drive, to travel (by vehicle)", ex_de: "Ich fahre nach Berlin mit dem Zug.", ex_en: "I'm travelling to Berlin by train." }] },
+  { de: "gehen", article: "", type: "verb (irregular Perfekt)", meanings: [{ en: "to go (on foot), to walk", ex_de: "Ich gehe zur Schule zu Fuß.", ex_en: "I walk to school." }, { en: "to go (general expression)", ex_de: "Gehen wir ins Kino?", ex_en: "Shall we go to the cinema?" }] },
+  { de: "sprechen", article: "", type: "verb (e→i)", meanings: [{ en: "to speak, to talk", ex_de: "Ich spreche Deutsch und Englisch.", ex_en: "I speak German and English." }] },
+  { de: "sagen", article: "", type: "verb (regular)", meanings: [{ en: "to say", ex_de: "Er sagt immer 'Hallo'.", ex_en: "He always says 'Hello'." }] },
+  { de: "hören", article: "", type: "verb (regular)", meanings: [{ en: "to hear, to listen (generally)", ex_de: "Ich höre gern Musik.", ex_en: "I like listening to music." }] },
+  { de: "zuhören", article: "", type: "verb (separable)", meanings: [{ en: "to listen attentively (to someone)", ex_de: "Hörst du mir zu?", ex_en: "Are you listening to me?" }] },
+  { de: "müssen", article: "", type: "modal verb", meanings: [{ en: "must, have to (internal necessity)", ex_de: "Ich muss heute lernen.", ex_en: "I have to study today." }] },
+  { de: "können", article: "", type: "modal verb", meanings: [{ en: "can, to be able to", ex_de: "Kannst du mir helfen?", ex_en: "Can you help me?" }] },
+  { de: "wollen", article: "", type: "modal verb", meanings: [{ en: "to want to (strong desire)", ex_de: "Ich will nach Deutschland fahren.", ex_en: "I want to go to Germany." }] },
+  { de: "möchten", article: "", type: "modal verb (polite)", meanings: [{ en: "would like to (polite)", ex_de: "Ich möchte einen Kaffee, bitte.", ex_en: "I would like a coffee, please." }] },
+  { de: "dürfen", article: "", type: "modal verb", meanings: [{ en: "may, to be allowed to", ex_de: "Darf ich das Fenster öffnen?", ex_en: "May I open the window?" }] },
+  { de: "sollen", article: "", type: "modal verb", meanings: [{ en: "should, supposed to (external order)", ex_de: "Du sollst mehr Wasser trinken.", ex_en: "You're supposed to drink more water." }] },
+  { de: "sein", article: "", type: "verb (highly irregular)", meanings: [{ en: "to be", ex_de: "Ich bin müde. Er ist Lehrer.", ex_en: "I am tired. He is a teacher." }] },
+  { de: "haben", article: "", type: "verb (irregular)", meanings: [{ en: "to have", ex_de: "Ich habe keine Zeit.", ex_en: "I have no time." }] },
+  { de: "werden", article: "", type: "verb (e→i)", meanings: [{ en: "to become, to get (change)", ex_de: "Ich werde Ärztin.", ex_en: "I'm becoming a doctor." }, { en: "will (future auxiliary)", ex_de: "Es wird morgen regnen.", ex_en: "It will rain tomorrow." }] },
+  { de: "die Mutter", article: "die • feminin", type: "noun, -¨", meanings: [{ en: "mother", ex_de: "Meine Mutter heißt Anna.", ex_en: "My mother's name is Anna." }] },
+  { de: "der Vater", article: "der • maskulin", type: "noun, -¨", meanings: [{ en: "father", ex_de: "Mein Vater ist Ingenieur.", ex_en: "My father is an engineer." }] },
+  { de: "die Geschwister", article: "die • Plural", type: "noun (plural only)", meanings: [{ en: "siblings (brothers and sisters)", ex_de: "Hast du Geschwister?", ex_en: "Do you have siblings?" }] },
+  { de: "der Bahnhof", article: "der • maskulin", type: "noun, -¨e", meanings: [{ en: "train station", ex_de: "Ich warte am Bahnhof.", ex_en: "I'm waiting at the train station." }] },
+  { de: "die Bibliothek", article: "die • feminin", type: "noun, -en", meanings: [{ en: "library", ex_de: "Ich lerne in der Bibliothek.", ex_en: "I study in the library." }] },
+  { de: "das Wochenende", article: "das • neutrum", type: "noun, -n", meanings: [{ en: "weekend", ex_de: "Am Wochenende lerne ich Deutsch.", ex_en: "On the weekend I learn German." }] },
+  { de: "leider", article: "", type: "adverb", meanings: [{ en: "unfortunately", ex_de: "Leider kann ich nicht kommen.", ex_en: "Unfortunately I cannot come." }] },
+  { de: "gern / gerne", article: "", type: "adverb", meanings: [{ en: "gladly, with pleasure, like to", ex_de: "Ich koche gern. Ja, gerne!", ex_en: "I like to cook. Yes, gladly!" }] },
+  { de: "seit", article: "", type: "preposition (+ Dativ)", meanings: [{ en: "since, for (ongoing action)", ex_de: "Ich lerne seit zwei Jahren Deutsch.", ex_en: "I've been learning German for two years." }] },
+  { de: "vor", article: "", type: "preposition", meanings: [{ en: "ago (time), before, in front of", ex_de: "Vor zwei Jahren war ich in Berlin.", ex_en: "Two years ago I was in Berlin." }] },
+  { de: "nach", article: "", type: "preposition (+ Dativ)", meanings: [{ en: "to (cities/countries), after, according to", ex_de: "Ich fahre nach Berlin. Nach dem Essen...", ex_en: "I'm going to Berlin. After the meal..." }] },
+  { de: "zu", article: "", type: "preposition (+ Dativ)", meanings: [{ en: "to (people/places with function), too", ex_de: "Ich gehe zum Arzt. Das ist zu schwer.", ex_en: "I'm going to the doctor. That's too hard." }] },
+  { de: "weil", article: "", type: "conjunction (subordinating)", meanings: [{ en: "because (verb goes to end!)", ex_de: "Ich lerne Deutsch, weil ich in Deutschland arbeiten möchte.", ex_en: "I learn German because I want to work in Germany." }] },
+  { de: "denn", article: "", type: "conjunction (coordinating)", meanings: [{ en: "because (normal word order)", ex_de: "Ich lerne Deutsch, denn ich möchte in Deutschland arbeiten.", ex_en: "I learn German because I want to work in Germany." }] },
+  { de: "der Kellner", article: "der • maskulin", type: "noun, - / die Kellnerin", meanings: [{ en: "waiter / waitress", ex_de: "Der Kellner bringt die Speisekarte.", ex_en: "The waiter brings the menu." }] },
+  { de: "bestellen", article: "", type: "verb (regular)", meanings: [{ en: "to order", ex_de: "Ich bestelle einen Kaffee und ein Wasser.", ex_en: "I'll order a coffee and a water." }] },
+  { de: "bezahlen", article: "", type: "verb (regular)", meanings: [{ en: "to pay", ex_de: "Ich möchte bitte bezahlen.", ex_en: "I'd like to pay please." }] },
+  { de: "die Rechnung", article: "die • feminin", type: "noun, -en", meanings: [{ en: "bill, invoice, calculation", ex_de: "Die Rechnung, bitte!", ex_en: "The bill, please!" }] },
+  { de: "tragen", article: "", type: "verb (e→ä)", meanings: [{ en: "to wear, to carry", ex_de: "Ich trage heute ein blaues T-Shirt.", ex_en: "I'm wearing a blue T-shirt today." }] },
+  { de: "der Termin", article: "der • maskulin", type: "noun, -e", meanings: [{ en: "appointment, date, deadline", ex_de: "Ich habe am Montag einen Termin.", ex_en: "I have an appointment on Monday." }] },
+  { de: "das Frühstück", article: "das • neutrum", type: "noun, -e", meanings: [{ en: "breakfast", ex_de: "Zum Frühstück esse ich Müsli.", ex_en: "For breakfast I eat muesli." }] },
+  { de: "aufstehen", article: "", type: "verb (separable)", meanings: [{ en: "to get up, to stand up", ex_de: "Ich stehe um 7 Uhr auf.", ex_en: "I get up at 7 o'clock." }] },
+  { de: "die Wohnung", article: "die • feminin", type: "noun, -en", meanings: [{ en: "apartment, flat", ex_de: "Ich wohne in einer kleinen Wohnung.", ex_en: "I live in a small apartment." }] },
+  { de: "einkaufen", article: "", type: "verb (separable)", meanings: [{ en: "to go shopping, to shop", ex_de: "Ich gehe heute einkaufen.", ex_en: "I'm going shopping today." }] },
+  { de: "natürlich", article: "", type: "adverb", meanings: [{ en: "of course, naturally", ex_de: "Natürlich helfe ich dir!", ex_en: "Of course I'll help you!" }] },
+  { de: "deshalb", article: "", type: "adverb/connector", meanings: [{ en: "therefore, that's why", ex_de: "Ich bin müde, deshalb gehe ich früh schlafen.", ex_en: "I'm tired, that's why I'm going to bed early." }] },
+  { de: "trotzdem", article: "", type: "adverb/connector", meanings: [{ en: "nevertheless, anyway, still", ex_de: "Es regnet, aber wir gehen trotzdem spazieren.", ex_en: "It's raining but we're going for a walk anyway." }] },
+  { de: "die Sprache", article: "die • feminin", type: "noun, -n", meanings: [{ en: "language", ex_de: "Welche Sprachen sprichst du?", ex_en: "Which languages do you speak?" }] },
+  { de: "der Beruf", article: "der • maskulin", type: "noun, -e", meanings: [{ en: "profession, occupation, job", ex_de: "Was ist Ihr Beruf?", ex_en: "What is your profession?" }] },
+  { de: "verheiratet", article: "", type: "adjective", meanings: [{ en: "married", ex_de: "Sind Sie verheiratet?", ex_en: "Are you married?" }] },
+  { de: "ledig", article: "", type: "adjective", meanings: [{ en: "single (unmarried)", ex_de: "Ich bin noch ledig.", ex_en: "I'm still single." }] },
+];
+
+function searchDict(query) {
+  const q = query.trim().toLowerCase();
+  const container = document.getElementById('dict-results');
+  if (!q) { container.innerHTML = '<div class="no-results" style="color:#b4b2a9;padding:1.5rem;text-align:center;font-family:sans-serif;font-size:0.9rem;">Type a word above to search...</div>'; return; }
+  
+  const results = dictionary.filter(e => {
+    const de = e.de.toLowerCase();
+    const en = e.meanings.map(m => m.en.toLowerCase()).join(' ');
+    const exDe = e.meanings.map(m => (m.ex_de||'').toLowerCase()).join(' ');
+    return de.includes(q) || en.includes(q) || exDe.includes(q);
+  });
+  
+  if (!results.length) {
+    container.innerHTML = `<div class="no-results"><p style="font-family:sans-serif;color:#888780;font-size:0.9rem;">No results for "<strong>${query}</strong>".<br>Try: kochen, family, weil, fahren, since...</p></div>`;
+    return;
+  }
+  
+  container.innerHTML = results.slice(0, 8).map(e => `
+    <div class="dict-entry">
+      <div><span class="entry-word">${e.de}</span>${e.article ? `<span class="entry-article">${e.article}</span>` : ''}</div>
+      <div class="entry-type">${e.type}</div>
+      <div class="entry-meanings">
+        ${e.meanings.map((m,i) => `
+          <div class="meaning-item">
+            <span class="meaning-num">${e.meanings.length > 1 ? (i+1)+'.' : ''}</span>
+            <span class="meaning-en">${m.en}</span>
+            ${m.ex_de ? `<div class="meaning-ex"><span class="de-part">${m.ex_de}</span> — ${m.ex_en}</div>` : ''}
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  `).join('');
+}
+
+// keyboard shortcut: focus dict on /
+document.addEventListener('keydown', e => { if (e.key === '/' && document.activeElement.tagName !== 'INPUT') { e.preventDefault(); document.getElementById('dict-search').focus(); } });
+</script>
+</body>
+</html>
